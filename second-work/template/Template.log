@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  18 JUL 2019 15:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  26 JUL 2019 21:08
 entering extended mode
 **Template.tex
-(E:\WorkSpace\GitHub_WorkSpace\second-work\template\Template.tex
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\软件\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -21,7 +21,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(E:\WorkSpace\GitHub_WorkSpace\second-work\template\spconf.sty)
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\spconf.sty)
 (D:\软件\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
@@ -159,20 +159,20 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(E:\WorkSpace\GitHub_WorkSpace\second-work\template\Template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 31.
 
 (D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -192,12 +192,12 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 61.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 51.
  (D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1{D:/软件/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
@@ -205,9 +205,6 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
-
-LaTeX Warning: Citation `Lamp86' on page 2 undefined on input line 159.
-
 Package epstopdf Info: Source file: <image1.eps>
 (epstopdf)                    date: 2019-05-07 21:33:43
 (epstopdf)                    size: 22626 bytes
@@ -216,13 +213,14 @@ Package epstopdf Info: Source file: <image1.eps>
 (epstopdf)                    size: 4053 bytes
 (epstopdf)             Command: <epstopdf --outfile=image1-eps-converted-to.pdf
  image1.eps>
-(epstopdf)             \includegraphics on input line 178.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
-<image1-eps-converted-to.pdf, id=10, 261.97874pt x 58.2175pt>
+
+<image1-eps-converted-to.pdf, id=11, 261.97874pt x 58.2175pt>
 File: image1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image1-eps-converted-to.pdf>
-Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 178.
+Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 125.
 (pdftex.def)             Requested size: 241.84842pt x 53.7455pt.
 Package epstopdf Info: Source file: <image3.eps>
 (epstopdf)                    date: 2019-05-07 21:33:43
@@ -232,14 +230,14 @@ Package epstopdf Info: Source file: <image3.eps>
 (epstopdf)                    size: 3806 bytes
 (epstopdf)             Command: <epstopdf --outfile=image3-eps-converted-to.pdf
  image3.eps>
-(epstopdf)             \includegraphics on input line 185.
+(epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 
-<image3-eps-converted-to.pdf, id=11, 231.86626pt x 143.53625pt>
+<image3-eps-converted-to.pdf, id=12, 231.86626pt x 143.53625pt>
 File: image3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image3-eps-converted-to.pdf>
-Package pdftex.def Info: image3-eps-converted-to.pdf used on input line 185.
+Package pdftex.def Info: image3-eps-converted-to.pdf used on input line 132.
 (pdftex.def)             Requested size: 113.81102pt x 70.45602pt.
 Package epstopdf Info: Source file: <image4.eps>
 (epstopdf)                    date: 2019-05-07 21:33:44
@@ -249,57 +247,40 @@ Package epstopdf Info: Source file: <image4.eps>
 (epstopdf)                    size: 3519 bytes
 (epstopdf)             Command: <epstopdf --outfile=image4-eps-converted-to.pdf
  image4.eps>
-(epstopdf)             \includegraphics on input line 192.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<image4-eps-converted-to.pdf, id=12, 231.86626pt x 143.53625pt>
+<image4-eps-converted-to.pdf, id=13, 231.86626pt x 143.53625pt>
 File: image4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image4-eps-converted-to.pdf>
-Package pdftex.def Info: image4-eps-converted-to.pdf used on input line 192.
+Package pdftex.def Info: image4-eps-converted-to.pdf used on input line 139.
 (pdftex.def)             Requested size: 113.81102pt x 70.45602pt.
 
-
-LaTeX Warning: Citation `Lamp86' on page 2 undefined on input line 232.
-
-
-LaTeX Warning: Citation `C2' on page 2 undefined on input line 233.
-
-[2 <E:/WorkSpace/GitHub_WorkSpace/second-work/template/image1-eps-converted-to.
-pdf> <E:/WorkSpace/GitHub_WorkSpace/second-work/template/image3-eps-converted-t
-o.pdf> <E:/WorkSpace/GitHub_WorkSpace/second-work/template/image4-eps-converted
--to.pdf>]
-
-LaTeX Warning: Citation `C2' on page 3 undefined on input line 248.
-
-(E:\WorkSpace\GitHub_WorkSpace\second-work\template\Template.bbl) [3
-
-]
-(E:\WorkSpace\GitHub_WorkSpace\second-work\template\Template.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.bbl) [2 <E:/W
+orkSpace/GitHub_WorkSpace/1111/second-work/template/image1-eps-converted-to.pdf
+> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image3-eps-converted
+-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image4-eps-co
+nverted-to.pdf>]
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2203 strings out of 495354
- 29466 string characters out of 3183467
- 88734 words of memory out of 3000000
- 5335 multiletter control sequences out of 15000+200000
+ 2194 strings out of 495354
+ 29415 string characters out of 3183467
+ 88915 words of memory out of 3000000
+ 5326 multiletter control sequences out of 15000+200000
  21023 words of font info for 46 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,10n,23p,1151b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/u
-rw/courier/ucrr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
-D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软件/CTEX/MiKTeX/
-fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on Template.pdf (3 pages, 88982 bytes).
+ 42i,11n,23p,1151b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/软
+件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/courie
+r/ucrr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/软件
+/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软件/CTEX/MiKTeX/fonts/typ
+e1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on Template.pdf (2 pages, 85187 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

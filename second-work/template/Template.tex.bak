@@ -12,7 +12,7 @@
 
 % Title.
 % ------
-\title{AUTHOR GUIDELINES FOR ICASSP 2019 PROCEEDINGS MANUSCRIPTS}
+\title{Multi-scale Defect Detection Network For Tire X-ray Images}
 %
 % Single address.
 % ---------------
@@ -44,11 +44,11 @@
 \maketitle
 %
 \begin{abstract}
-Though automatic detection method has been tremendous improved, with the gradual penetration of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of its products. In this work, we focus on detection tasks in the tire industry and develop a $Multi-scale Defect Detection Network (MDDN)$, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a $Semantic-aware Sub-network$, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel $Texture-aware Sub-network$ is used to exploit the small size of the cover edge features and small defects as much as possible. Finally, the pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that MDDN can produce comparable results and achieve significantly performance improvement in small defects detection.
+Though automatic detection method has been tremendous improved, with the gradual penetration of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of its products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to exploit the small size of the cover edge features and small defects as much as possible. Finally, the pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
 \end{abstract}
 %
 \begin{keywords}
-One, two, three, four, five
+Defect detection, Fully convolutional network, Semantic segmentation, Multi-scale context
 \end{keywords}
 %
 \section{Introduction}
