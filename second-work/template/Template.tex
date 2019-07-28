@@ -3,7 +3,7 @@
 %          IEEEbib.bst - IEEE bibliography style file.
 % --------------------------------------------------------------------------
 \documentclass{article}
-\usepackage{spconf,amsmath,graphicx,epstopdf}
+\usepackage{spconf,amsmath,graphicx,epstopdf,float}
 
 % Example definitions.
 % --------------------
@@ -35,12 +35,20 @@ Defect detection, Fully convolutional network, Semantic segmentation, Multi-scal
 
 \section{Introduction}
 \label{sec:intro}
+Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes, such as fabrics[1,2,3], steel[4], semiconductors[5], and solar wafers[6]. Especially in tire manufacturing, numerous detection algorithms have been proposed [7,8,9,10,11] and aroused extensive attention over the past two decades. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities[12]. Then, the defective product is hierarchical processed according to the location and size of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study[13, 14], most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
 
-These guidelines include complete descriptions of the fonts, spacing, and
-related information for producing your proceedings manuscripts. Please follow
-them and if you have any questions, direct them to Conference Management
-Services, Inc.: Phone +1-979-846-6800 or email
-to \\\texttt{icassp2019@cmsworkshops.com}.
+\begin{figure}[t]
+  \centering
+  \centerline{\includegraphics[width=9cm]{pic1.eps}}
+  \caption{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. }
+\end{figure} 
+
+At present, existing computer vision based detection methods are mostly devoted to distinguish difference between defective regions and background (defective-free regions). Hence a key issue for such methods is feature extraction. Guo et al. [15] exploited a local kernel regression descriptor to derive feature vectors. By comparing the dissimilarity of the corresponding feature between one pixel and its neighbors, anomaly pixels can be located and segmented, even in the tread image. Nevertheless, this method is not suitable for real-time detection tasks because of the high computational complexity. A component decomposition based method was proposed in [15] , which separated the background from the image by means of two designed filters. Then through an adaptive thresholding processing, defects were derived from the residual image. Besides, Independent component analysis(ICA) was also used for defect detection tasks[8,9]. A major disadvantage of these fundamental methods is the limitation of the information contained in low-level clues and domain features. To address the limitation, Zhang et al. [] and Zhang et al. [][] introduced radon transform and mulit-scale transform, for instance curvelet and wavelet transform, in detection tasks respectively. Furthermore, optimized edge detection and total variation algorithm are used to achieve more accurate results[]. Zhao et al.[] proposed a multiple kernel learning method, which combined various transform kernels to get more differentiated information. However, the representation capability of fixed kernels is not comprehensive enough. In addition, transform process is computationally expensive. Recently, Cui et al. [] attempted to classify tire defects by means of convolutional neural networks(CNN), which has outstanding performance in the recognition and segmentation tasks of natural images. With the excellent feature extraction capability of deep network, Wang et al. [] further implemented the detection and segmentation in tire images by a fully convolutional network(FCN). However, FCN is not sensitive to small defects and edge details, which is similar to that in dealing with natural image tasks.
+
+
+
+%\Figure[t!][width=0.86\textwidth]{test1.eps}
+%{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. (b) indicates ground truths obtained by manual marking. (c),(d),(e) and (f) are detection results using AlexNet, VGG11, VGG13 and VGG16 as the basic architecture, respectively. \label{fig1}}
 
 \section{Multi-scale Defect Detection Network}
 \label{sec:format}
@@ -101,10 +109,16 @@ List and number all bibliographical references at the end of the
 paper. The references can be numbered in alphabetic order or in
 order of appearance in the document. When referring to them in
 the text, type the corresponding reference number in square
-brackets as shown at the end of this sentence \cite{C2}. An
+brackets as shown at the end of this sentence \cite{C2,kumar2008computer}. An
 additional final page (the fifth page, in most cases) is
 allowed, but must contain only references to the prior
 literature.
+
+These guidelines include complete descriptions of the fonts, spacing, and
+related information for producing your proceedings manuscripts. Please follow
+them and if you have any questions, direct them to Conference Management
+Services, Inc.: Phone +1-979-846-6800 or email
+to \\\texttt{icassp2019@cmsworkshops.com}.
 
 % Below is an example of how to insert images. Delete the ``\vspace'' line,
 % uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''

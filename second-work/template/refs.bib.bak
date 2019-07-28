@@ -1,0 +1,19 @@
+@InProceedings{C2,
+  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
+  title =        "Article Title",
+  booktitle =        "Proceedings Title",
+  organization = "IEEE",
+  year = 	 "2003",
+  volume = 	 "II",
+  pages = 	 "803-806"
+}
+
+@InProceedings{kumar2008computer,
+  author = 	 "Kumar, A.",
+  title =        "Computer-vision-based fabric defect detection: A survey",
+  booktitle =        "IEEE transactions on industrial electronics",
+  organization = "IEEE",
+  year = 	 "2008",
+  volume = 	 "55",
+  pages = 	 "348-363"
+}

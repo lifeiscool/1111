@@ -3,64 +3,54 @@
 %          IEEEbib.bst - IEEE bibliography style file.
 % --------------------------------------------------------------------------
 \documentclass{article}
-\usepackage{spconf,amsmath,graphicx,epstopdf}
+\usepackage{spconf,amsmath,graphicx,epstopdf,float}
 
 % Example definitions.
 % --------------------
 \def\x{{\mathbf x}}
 \def\L{{\cal L}}
 
-% Title.
-% ------
-\title{Multi-scale Defect Detection Network For Tire X-ray Images}
-%
-% Single address.
-% ---------------
-\name{Author(s) Name(s)\thanks{Thanks to XYZ agency for funding.}}
-\address{Author Affiliation(s)}
-%
-% For example:
-% ------------
-%\address{School\\
-%	Department\\
-%	Address}
-%
-% Two addresses (uncomment and modify for two-address case).
-% ----------------------------------------------------------
-%\twoauthors
-%  {A. Author-one, B. Author-two\sthanks{Thanks to XYZ agency for funding.}}
-%	{School A-B\\
-%	Department A-B\\
-%	Address A-B}
-%  {C. Author-three, D. Author-four\sthanks{The fourth author performed the work
-%	while at ...}}
-%	{School C-D\\
-%	Department C-D\\
-%	Address C-D}
-%
+\title{Multi-scale Defect Detection Network for Tire X-ray Images}
+
+
+\name{Ren Wang{\rm\textsuperscript{1,2}}, Qiang Guo{\rm\textsuperscript{1,2}}, Shanmei Lu{\rm\textsuperscript{1,2}}, Caiming Zhang{\rm\textsuperscript{3}}}
+
+\address{\textsuperscript{1}School of Computer Science and Technology, \\Shandong University of Finance and Economics, Jinan, China\\
+        \textsuperscript{2}Shandong Provincial Key Laboratory of Digital Media Technology, Jinan, China\\
+        \textsuperscript{3}Software College, Shandong University, Jinan, China}
+
+
 \begin{document}
 %\ninept
-%
+
 \maketitle
-%
+
 \begin{abstract}
 Though automatic detection method has been tremendous improved, with the gradual penetration of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of its products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to exploit the small size of the cover edge features and small defects as much as possible. Finally, the pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
 \end{abstract}
-%
+
 \begin{keywords}
 Defect detection, Fully convolutional network, Semantic segmentation, Multi-scale context
 \end{keywords}
-%
+
 \section{Introduction}
 \label{sec:intro}
+Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes, such as fabrics[1,2,3], steel[4], semiconductors[5], and solar wafers[6]. Especially in tire manufacturing, numerous detection algorithms have been proposed [7,8,9,10,11] and aroused extensive attention over the past two decades. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities[12]. Then, the defective product is hierarchical processed according to the location and size of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study[13, 14], most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
 
-These guidelines include complete descriptions of the fonts, spacing, and
-related information for producing your proceedings manuscripts. Please follow
-them and if you have any questions, direct them to Conference Management
-Services, Inc.: Phone +1-979-846-6800 or email
-to \\\texttt{icassp2019@cmsworkshops.com}.
+\begin{figure}[t]
+  \centering
+  \centerline{\includegraphics[width=9cm]{pic.eps}}
+  \caption{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. }
+\end{figure} 
 
-\section{Formatting your paper}
+At present, existing computer vision based detection methods are mostly devoted to distinguish difference between defective regions and background (defective-free regions). Hence a key issue for such methods is feature extraction. Guo et al. [15] exploited a local kernel regression descriptor to derive feature vectors. By comparing the dissimilarity of the corresponding feature between one pixel and its neighbors, anomaly pixels can be located and segmented, even in the tread image. Nevertheless, this method is not suitable for real-time detection tasks because of the high computational complexity. A component decomposition based method was proposed in [15] , which separated the background from the image by means of two designed filters. Then through an adaptive thresholding processing, defects were derived from the residual image. Besides, Independent component analysis(ICA) was also used for defect detection tasks[8,9]. A major disadvantage of these fundamental methods is the limitation of the information contained in low-level clues and domain features. To address the limitation, Zhang et al. [] and Zhang et al. [][] introduced radon transform and mulit-scale transform, for instance curvelet and wavelet transform, in detection tasks respectively. Furthermore, optimized edge detection and total variation algorithm are used to achieve more accurate results[]. Zhao et al.[] proposed a multiple kernel learning method, which combined various transform kernels to get more differentiated information. However, the representation capability of fixed kernels is not comprehensive enough. In addition, transform process is computationally expensive. Recently, Cui et al. [] attempted to classify tire defects by means of convolutional neural networks(CNN), which has outstanding performance in the recognition and segmentation tasks of natural images. With the excellent feature extraction capability of deep network, Wang et al. [] further implemented the detection and segmentation in tire images by a fully convolutional network(FCN). However, FCN is not sensitive to small defects and edge details, which is similar to that in dealing with natural image tasks.
+
+
+
+%\Figure[t!][width=0.86\textwidth]{test1.eps}
+%{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. (b) indicates ground truths obtained by manual marking. (c),(d),(e) and (f) are detection results using AlexNet, VGG11, VGG13 and VGG16 as the basic architecture, respectively. \label{fig1}}
+
+\section{Multi-scale Defect Detection Network}
 \label{sec:format}
 
 All printed material, including text, illustrations, and charts, must be kept
@@ -71,7 +61,7 @@ inch (25 mm), except for the title page, and the left margin must be 0.75 inch
 inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
 fully justified.
 
-\section{PAGE TITLE SECTION}
+\section{EXPERIMENTS}
 \label{sec:pagestyle}
 
 The paper title (on the first page) should begin 1.38 inches (35 mm) from the
@@ -82,7 +72,7 @@ affiliations may require two or more lines for this information. Please note
 that papers should not be submitted blind; include the authors' names on the
 PDF.
 
-\section{TYPE-STYLE AND FONTS}
+\section{CONCLUSION}
 \label{sec:typestyle}
 
 To achieve the best rendering both in printed proceedings and electronic proceedings, we
@@ -101,71 +91,34 @@ The first paragraph in each section should not be indented, but all the
 following paragraphs within the section should be indented as these paragraphs
 demonstrate.
 
-\section{MAJOR HEADINGS}
-\label{sec:majhead}
-
-Major headings, for example, "1. Introduction", should appear in all capital
-letters, bold face if possible, centered in the column, with one blank line
-before, and one blank line after. Use a period (".") after the heading number,
-not a colon.
-
-\subsection{Subheadings}
-\label{ssec:subhead}
-
-Subheadings should appear in lower case (initial word capitalized) in
-boldface.  They should start at the left margin on a separate line.
 
 \subsubsection{Sub-subheadings}
 \label{sssec:subsubhead}
-
-Sub-subheadings, as in this paragraph, are discouraged. However, if you
-must use them, they should appear in lower case (initial word
-capitalized) and start at the left margin on a separate line, with paragraph
-text beginning on the following line.  They should be in italics.
-
-\section{PRINTING YOUR PAPER}
-\label{sec:print}
-
-Print your properly formatted text on high-quality, 8.5 x 11-inch white printer
-paper. A4 paper is also acceptable, but please leave the extra 0.5 inch (12 mm)
-empty at the BOTTOM of the page and follow the top and left margins as
-specified.  If the last page of your paper is only partially filled, arrange
-the columns so that they are evenly balanced if possible, rather than having
-one long column.
 
 In LaTeX, to start a new column (but not a new page) and help balance the
 last-page column lengths, you can use the command ``$\backslash$pagebreak'' as
 demonstrated on this page (see the LaTeX source below).
 
-\section{PAGE NUMBERING}
-\label{sec:page}
 
-Please do {\bf not} paginate your paper.  Page numbers, session numbers, and
-conference identification will be inserted when the paper is included in the
-proceedings.
-
-\section{ILLUSTRATIONS, GRAPHS, AND PHOTOGRAPHS}
-\label{sec:illust}
-
-Illustrations must appear within the designated margins.  They may span the two
-columns.  If possible, position illustrations at the top of columns, rather
-than in the middle or at the bottom.  Caption and number every illustration.
-All halftone illustrations must be clear black and white prints.  Colors may be
-used, but they should be selected so as to be readable when printed on a
-black-only printer.
 
 Since there are many ways, often incompatible, of including images (e.g., with
 experimental results) in a LaTeX document, below is an example of how to do
 this \cite{Lamp86}.
 
-\section{FOOTNOTES}
-\label{sec:foot}
+List and number all bibliographical references at the end of the
+paper. The references can be numbered in alphabetic order or in
+order of appearance in the document. When referring to them in
+the text, type the corresponding reference number in square
+brackets as shown at the end of this sentence \cite{C2,kumar2008computer}. An
+additional final page (the fifth page, in most cases) is
+allowed, but must contain only references to the prior
+literature.
 
-Use footnotes sparingly (or not at all!) and place them at the bottom of the
-column on the page on which they are referenced. Use Times 9-point type,
-single-spaced. To help your readers, avoid using footnotes altogether and
-include necessary peripheral observations in the text (within parentheses, if
-you prefer, as in this sentence).
+These guidelines include complete descriptions of the fonts, spacing, and
+related information for producing your proceedings manuscripts. Please follow
+them and if you have any questions, direct them to Conference Management
+Services, Inc.: Phone +1-979-846-6800 or email
+to \\\texttt{icassp2019@cmsworkshops.com}.
 
 % Below is an example of how to insert images. Delete the ``\vspace'' line,
 % uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''
@@ -206,49 +159,10 @@ you prefer, as in this sentence).
 %\vfill
 %\pagebreak
 
-\section{COPYRIGHT FORMS}
-\label{sec:copyright}
-
-You must submit your fully completed, signed IEEE electronic copyright release
-form when you submit your paper. We {\bf must} have this form before your paper
-can be published in the proceedings.
-
-\section{RELATION TO PRIOR WORK}
-\label{sec:prior}
-
-The text of the paper should contain discussions on how the paper's
-contributions are related to prior work in the field. It is important
-to put new work in  context, to give credit to foundational work, and
-to provide details associated with the previous work that have appeared
-in the literature. This discussion may be a separate, numbered section
-or it may appear elsewhere in the body of the manuscript, but it must
-be present.
-
-You should differentiate what is new and how your work expands on
-or takes a different path from the prior studies. An example might
-read something to the effect: "The work presented here has focused
-on the formulation of the ABC algorithm, which takes advantage of
-non-uniform time-frequency domain analysis of data. The work by
-Smith and Cohen \cite{Lamp86} considers only fixed time-domain analysis and
-the work by Jones et al \cite{C2} takes a different approach based on
-fixed frequency partitioning. While the present study is related
-to recent approaches in time-frequency analysis [3-5], it capitalizes
-on a new feature space, which was not considered in these earlier
-studies."
-
 \vfill\pagebreak
 
-\section{REFERENCES}
-\label{sec:refs}
 
-List and number all bibliographical references at the end of the
-paper. The references can be numbered in alphabetic order or in
-order of appearance in the document. When referring to them in
-the text, type the corresponding reference number in square
-brackets as shown at the end of this sentence \cite{C2}. An
-additional final page (the fifth page, in most cases) is
-allowed, but must contain only references to the prior
-literature.
+
 
 % References should be produced using the bibtex program from suitable
 % BiBTeX files (here: strings, refs, manuals). The IEEEbib.bst bibliography
