@@ -7,13 +7,186 @@
   volume = 	 "II",
   pages = 	 "803-806"
 }
-
-@InProceedings{kumar2008computer,
+@article{kumar2008computer,
   author = 	 "Kumar, A.",
   title =        "Computer-vision-based fabric defect detection: A survey",
-  booktitle =        "IEEE transactions on industrial electronics",
-  organization = "IEEE",
+  journal =        "IEEE Trans. on Industrial Electronics",
   year = 	 "2008",
   volume = 	 "55",
-  pages = 	 "348-363"
+  number= "1",
+  pages = 	 "348-363",
+  publisher = " IEEE"
+}
+@article{ngan2011automated,
+  author = "Ngan, H. Y. and Pang, G. K. and Yung, N. H.",
+  title = "Automated fabric defect detection¡ªa review",
+  journal = "Image and Vision Computing",
+  year = "2011",
+  volume = "29",
+  number = "7",
+  pages = "442-458",
+  publisher = "Elsevier"
+}
+@article{li2016deformable,
+  author = "Li, Y. and Zhao, W. and Pan, J.",
+  title = "Deformable patterned fabric defect detection with fisher criterion-based deep learning",
+  journal = "IEEE Trans. on Automation Science and Engineering",
+  year = "2016",
+  volume = "14",
+  number = "2",
+  pages = "1256-1264",
+  publisher = "IEEE"
+}
+@article{ghorai2012automatic,
+  author = "Ghorai, S. and Mukherjee, A. and Gangadaran, M. and Dutta, P. K.",
+  title = "Automatic defect detection on hot-rolled flat steel products",
+  journal = "IEEE Trans. on Instrumentation and Measurement",
+  year = "2012",
+  volume = "62",
+  number = "3",
+  pages = "612-621",
+  publisher = "IEEE"
+}
+@article{bai2014saliency,
+  author = "Bai, X. and Fang, Y. and Lin, W. and Wang, L. and Ju, B. F.",
+  title = "Saliency-based defect detection in industrial images by using phase spectrum",
+  journal = "IEEE Trans. on Industrial Informatics",
+  year = "2014",
+  volume = "10",
+  number = "4",
+  pages = "2135-2145",
+  publisher = "IEEE"
+}
+@article{tsai2012defect,
+  author = "Tsai, D. M. and Wu, S. C. and Chiu, W. Y. ",
+  title = "Defect detection in solar modules using ICA basis images",
+  journal = "IEEE Trans. on Industrial Informatics",
+  year = "2012",
+  volume = "9",
+  number = "1",
+  pages = "122-131",
+  publisher = "IEEE"
+}
+@article{zhang2013texture,
+  author = "Zhang, C. and Li, X. and Guo, Q. and Yu, X. and Zhang, C.",
+  title = "Texture-invariant detection method for tire crack",
+  journal = "Journal of Computer-Aided Design \& Computer Graphics",
+  year = "2013",
+  volume = "25",
+  number = "6",
+  pages = "809-816",
+}
+@InProceedings{cui2016defect,
+  author = 	 "Cui, X. and Liu, Y. and Wang, C.",
+  title =        "Defect automatic detection for tire X-ray images using inverse transformation of principal component residual",
+  booktitle =        "AIPR",
+  organization = "IEEE",
+  year = 	 "2016",
+  pages = 	 "1-8"
+}
+@article{cui2016novel,
+  author = "Cui, X. H. and Liu, Y. and Wang, C. X. and Li, H.",
+  title = "A Novel Method for Feature Extraction and Automatic Recognition of Tire Defects Using Independent Component Analysis",
+  journal = "DEStech Transactions on Materials Science and Engineering",
+  year = "2016",
+  number = "icimm",
+}
+@article{zhang2018tire,
+  author = "Zhang, Y. and Cui, X. and Liu, Y. and Yu, B.",
+  title = "Tire defects classification using convolution architecture for fast feature embedding",
+  journal = "International Journal of Computational Intelligence Systems",
+  year = "2018",
+  volume = "11",
+  number = "1",
+  pages = "1056-1066",
+  publisher = "Atlantis Press"
+}
+@article{guo2016defect,
+  author = "Guo, Q. and Zhang, C. and Liu, H. and Zhang, X.",
+  title = "Defect detection in tire X-Ray images using weighted texture dissimilarity",
+  journal = "Journal of Sensors",
+  year = "2016",
+  volume = "2016",
+  publisher = "Hindawi"
+}
+@article{guo2012tire,
+  author = "Guo, Q. and Wei, Z. W.",
+  title = "Tire defect detection using image component decomposition",
+  journal = "Research Journal of Applied Sciences, Engineering and Technology",
+  year = "2012",
+  volume = "4",
+  number = "1",
+  pages = "41-44",
+  publisher = "Maxwell Science Publishing"
+}
+@article{zhang2013defect,
+  author = "Zhang, Y. and Li, T. and Li, Q.",
+  title = "Defect detection for tire laser shearography image using curvelet transform based edge detector",
+  journal = "Optics \& Laser Technology",
+  year = "2013",
+  volume = "47",
+  pages = "64-71",
+  publisher = "Elsevier"
+}
+@article{yan2013detection,
+  author = "Yan, Z. and Tao, L. and Qing-Ling, L.",
+  title = "Detection of foreign bodies and bubble defects in tire radiography images based on total variation and edge detection",
+  journal = "Chinese Physics Letters",
+  year = "2013",
+  volume = "30",
+  number = "8",
+  pages = "084205",
+  publisher = "IOP Publishing"
+}
+@InProceedings{zhao2017tire,
+  author = 	 "Zhao, S. and Chen, Z. and Li, B. and Zhang, B.",
+  title =        "Tire X-ray Image Impurity Detection Based on Multiple Kernel Learning",
+  booktitle =        "Pacific Rim Conference on Multimedia",
+  organization = "Springer",
+  year = 	 "2017",
+  pages = 	 "346-355"
+}
+@article{zhang2015automatic,
+  author = "Zhang, Y. and Lefebvre, D. and Li, Q.",
+  title = "Automatic detection of defects in tire radiographic images",
+  journal = "IEEE Trans. on Automation Science and Engineering",
+  year = "2015",
+  volume = "14",
+  number = "3",
+  pages = "1378--1386",
+  publisher = "IEEE"
+}
+@InProceedings{xiang2014dictionary,
+  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
+  title =        "A dictionary-based method for tire defect detection",
+  booktitle =        "ICIA",
+  organization = "IEEE",
+  year = 	 "2014",
+  pages = 	 "519-523"
+}
+@article{cui2018tire,
+  author = "Cui, X. and Liu, Y. and Zhang, Y. and Wang, C.",
+  title = "Tire defects classification with multi-contrast convolutional neural networks",
+  journal = "International Journal of Pattern Recognition and Artificial Intelligence",
+  year = "2018",
+  volume = "32",
+  number = "04",
+  pages = "1850011",
+  publisher = "World Scientific"
+}
+@article{wang2019tire,
+  author = "Wang, R. and Guo, Q. and Lu, S. and Zhang, C.",
+  title = "Tire Defect Detection Using Fully Convolutional Network",
+  journal = "IEEE Access",
+  year = "2019",
+  volume = "7",
+  pages = "43502--43510",
+  publisher = "IEEE"
+}
+@InProceedings{long2015fully,
+  author = 	 "Long, J. and Shelhamer, E. and Darrell, T.",
+  title =        "Fully convolutional networks for semantic segmentation",
+  booktitle =        "Proceedings of the IEEE conference on computer vision and pattern recognition",
+  year = 	 "2015",
+  pages = 	 "3431-3440"
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  28 JUL 2019 19:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  28 JUL 2019 20:29
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -209,17 +209,12 @@ Package epstopdf Info: Source file: <pic1.eps>
 (epstopdf)                    date: 2019-07-28 19:09:41
 (epstopdf)                    size: 11919619 bytes
 (epstopdf)             Output file: <pic1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-28 19:05:10
-(epstopdf)                    size: 984819 bytes
+(epstopdf)                    date: 2019-07-28 19:10:09
+(epstopdf)                    size: 984736 bytes
 (epstopdf)             Command: <epstopdf --outfile=pic1-eps-converted-to.pdf p
 ic1.eps>
 (epstopdf)             \includegraphics on input line 42.
-runsystem(epstopdf --outfile=pic1-eps-converted-to.pdf pic1.eps)...executed (al
-lowed).
-
-Package epstopdf Info: Result file: <pic1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-28 19:10:09
-(epstopdf)                    size: 984736 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <pic1-eps-converted-to.pdf, id=1, 731.73375pt x 561.09625pt>
 File: pic1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -235,8 +230,13 @@ Underfull \vbox (badness 4673) has occurred while \output is active []
 
  <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic1-eps-converted-to
 .pdf>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 121.
 
+LaTeX Warning: Citation `Lamp86' on page 2 undefined on input line 106.
+
+
+LaTeX Warning: Citation `C2' on page 2 undefined on input line 112.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 121.
 
 (D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -296,26 +296,29 @@ Package pdftex.def Info: image4-eps-converted-to.pdf used on input line 145.
 ed-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image3-eps-
 converted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/imag
 e4-eps-converted-to.pdf>]
-(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.bbl) [3
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.bbl
+Missing character: There is no � in font ptmr7t!
+) [3]
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
 
-]
-(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2259 strings out of 495354
- 30303 string characters out of 3183467
- 93296 words of memory out of 3000000
- 5386 multiletter control sequences out of 15000+200000
+ 2276 strings out of 495354
+ 30575 string characters out of 3183467
+ 93350 words of memory out of 3000000
+ 5403 multiletter control sequences out of 15000+200000
  21023 words of font info for 46 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,11n,23p,2198b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/软
-件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/courie
-r/ucrr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/软件
-/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软件/CTEX/MiKTeX/fonts/typ
-e1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on Template.pdf (3 pages, 1073282 bytes).
+ 42i,11n,23p,2433b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/u
+rw/courier/ucrr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
+D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软件/CTEX/MiKTeX/
+fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on Template.pdf (3 pages, 1079934 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
