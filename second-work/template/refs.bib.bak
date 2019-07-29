@@ -1,12 +1,3 @@
-@InProceedings{C2,
-  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
-  title =        "Article Title",
-  booktitle =        "Proceedings Title",
-  organization = "IEEE",
-  year = 	 "2003",
-  volume = 	 "II",
-  pages = 	 "803-806"
-}
 @article{kumar2008computer,
   author = 	 "Kumar, A.",
   title =        "Computer-vision-based fabric defect detection: A survey",
@@ -190,3 +181,58 @@
   year = 	 "2015",
   pages = 	 "3431-3440"
 }
+@InProceedings{lin2017feature,
+  author = 	 "Lin, T. Y. and Doll¨¢r, P. and Girshick, R. and He, K. and Hariharan, B. and Belongie, S.",
+  title =        "Feature pyramid networks for object detection",
+  booktitle =        "CVPR",
+  year = 	 "2017",
+  pages = 	 "2117-2125"
+}
+@InProceedings{liu2016ssd,
+  author = 	 "Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and Reed, S. and Fu, C. Y. and Berg, A. C.",
+  title =        "Ssd: Single shot multibox detector",
+  booktitle =        "ECCV",
+  year = 	 "2016",
+  pages = 	 "21-37",
+  organization="Springer"
+}
+
+
+@InProceedings{zhou2018scale,
+  author = "Zhou, P. and Ni, B. and Geng, C. and Hu, J. and Xu, Y.",
+  title = "Scale-transferrable object detection",
+  booktitle = "CVPR",
+  year = "2018",
+  pages = "528-537",
+}
+@InProceedings{dalal2005histograms,
+  author = "Dalal, N. and Triggs, B.",
+  title = "Histograms of oriented gradients for human detection",
+  booktitle = "CVPR",
+  year = "2005",
+}
+@article{lowe2004distinctive,
+  author = "Lowe, D. G.",
+  title = "Distinctive image features from scale-invariant keypoints",
+  journal = "IJCV",
+  year = "2004",
+  volume = "60",
+  pages = "91-110",
+  publisher = "Springer"
+}
+@InProceedings{bai2018sod,
+  author = "Bai, Y. and Zhang, Y. and Ding, M. and Ghanem, B.",
+  title = "Sod-mtgan: Small object detection via multi-task generative adversarial network",
+  booktitle = "ECCV",
+  pages = "206-221",
+  year = "2018",
+}
+@InProceedings{chen2016attention,
+  author = "Chen, L. C. and Yang, Y. and Wang, J. and Xu, W. and Yuille, A. L.",
+  title = "Attention to scale: Scale-aware semantic image segmentation",
+  booktitle = "CVPR",
+  pages = "3640-3649",
+  year = "2016",
+}
+
+

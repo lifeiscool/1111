@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  28 JUL 2019 20:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  29 JUL 2019 19:37
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -167,22 +167,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 23.
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux
 
-(D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+LaTeX Warning: Label `sssec:subsubhead' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+ (D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (D:\软件\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
@@ -200,11 +203,11 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks23
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 32.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 33.
 Package epstopdf Info: Source file: <pic1.eps>
 (epstopdf)                    date: 2019-07-28 19:09:41
 (epstopdf)                    size: 11919619 bytes
@@ -213,14 +216,31 @@ Package epstopdf Info: Source file: <pic1.eps>
 (epstopdf)                    size: 984736 bytes
 (epstopdf)             Command: <epstopdf --outfile=pic1-eps-converted-to.pdf p
 ic1.eps>
-(epstopdf)             \includegraphics on input line 42.
+(epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
  <pic1-eps-converted-to.pdf, id=1, 731.73375pt x 561.09625pt>
 File: pic1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic1-eps-converted-to.pdf>
-Package pdftex.def Info: pic1-eps-converted-to.pdf used on input line 42.
+Package pdftex.def Info: pic1-eps-converted-to.pdf used on input line 43.
 (pdftex.def)             Requested size: 256.0748pt x 196.36095pt.
+Package epstopdf Info: Source file: <pic2.eps>
+(epstopdf)                    date: 2019-07-29 14:38:17
+(epstopdf)                    size: 38318709 bytes
+(epstopdf)             Output file: <pic2-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-29 14:40:19
+(epstopdf)                    size: 2106588 bytes
+(epstopdf)             Command: <epstopdf --outfile=pic2-eps-converted-to.pdf p
+ic2.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+
+<pic2-eps-converted-to.pdf, id=2, 6919.8525pt x 2234.3475pt>
+File: pic2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pic2-eps-converted-to.pdf>
+Package pdftex.def Info: pic2-eps-converted-to.pdf used on input line 50.
+(pdftex.def)             Requested size: 435.55508pt x 140.63509pt.
 
 Underfull \vbox (badness 4673) has occurred while \output is active []
 
@@ -229,18 +249,36 @@ Underfull \vbox (badness 4673) has occurred while \output is active []
 
 
  <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic1-eps-converted-to
-.pdf>]
-
-LaTeX Warning: Citation `Lamp86' on page 2 undefined on input line 106.
-
-
-LaTeX Warning: Citation `C2' on page 2 undefined on input line 112.
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 121.
-
-(D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+.pdf>] [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-eps-con
+verted-to.pdf>]
+Package epstopdf Info: Source file: <pic2.eps>
+(epstopdf)                    date: 2019-07-29 14:38:17
+(epstopdf)                    size: 38318709 bytes
+(epstopdf)             Output file: <pic2-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-29 14:40:19
+(epstopdf)                    size: 2106588 bytes
+(epstopdf)             Command: <epstopdf --outfile=pic2-eps-converted-to.pdf p
+ic2.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
+File: pic2-eps-converted-to.pdf Graphic file (type pdf)
+<use pic2-eps-converted-to.pdf>
+Package pdftex.def Info: pic2-eps-converted-to.pdf used on input line 138.
+(pdftex.def)             Requested size: 435.55508pt x 140.63509pt.
+Package epstopdf Info: Source file: <pic2.eps>
+(epstopdf)                    date: 2019-07-29 14:38:17
+(epstopdf)                    size: 38318709 bytes
+(epstopdf)             Output file: <pic2-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-29 14:40:19
+(epstopdf)                    size: 2106588 bytes
+(epstopdf)             Command: <epstopdf --outfile=pic2-eps-converted-to.pdf p
+ic2.eps>
+(epstopdf)             \includegraphics on input line 142.
+Package epstopdf Info: Output file is already uptodate.
+File: pic2-eps-converted-to.pdf Graphic file (type pdf)
+ <use pic2-eps-converted-to.pdf>
+Package pdftex.def Info: pic2-eps-converted-to.pdf used on input line 142.
+(pdftex.def)             Requested size: 435.55508pt x 140.63509pt.
 Package epstopdf Info: Source file: <image1.eps>
 (epstopdf)                    date: 2019-05-07 21:33:43
 (epstopdf)                    size: 22626 bytes
@@ -249,14 +287,14 @@ Package epstopdf Info: Source file: <image1.eps>
 (epstopdf)                    size: 4053 bytes
 (epstopdf)             Command: <epstopdf --outfile=image1-eps-converted-to.pdf
  image1.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
-<image1-eps-converted-to.pdf, id=175, 261.97874pt x 58.2175pt>
+<image1-eps-converted-to.pdf, id=266, 261.97874pt x 58.2175pt>
 File: image1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image1-eps-converted-to.pdf>
-Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 131.
+Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 181.
 (pdftex.def)             Requested size: 241.84842pt x 53.7455pt.
 Package epstopdf Info: Source file: <image3.eps>
 (epstopdf)                    date: 2019-05-07 21:33:43
@@ -266,14 +304,14 @@ Package epstopdf Info: Source file: <image3.eps>
 (epstopdf)                    size: 3806 bytes
 (epstopdf)             Command: <epstopdf --outfile=image3-eps-converted-to.pdf
  image3.eps>
-(epstopdf)             \includegraphics on input line 138.
+(epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
 
-<image3-eps-converted-to.pdf, id=176, 231.86626pt x 143.53625pt>
+<image3-eps-converted-to.pdf, id=267, 231.86626pt x 143.53625pt>
 File: image3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image3-eps-converted-to.pdf>
-Package pdftex.def Info: image3-eps-converted-to.pdf used on input line 138.
+Package pdftex.def Info: image3-eps-converted-to.pdf used on input line 188.
 (pdftex.def)             Requested size: 113.81102pt x 70.45602pt.
 Package epstopdf Info: Source file: <image4.eps>
 (epstopdf)                    date: 2019-05-07 21:33:44
@@ -283,44 +321,50 @@ Package epstopdf Info: Source file: <image4.eps>
 (epstopdf)                    size: 3519 bytes
 (epstopdf)             Command: <epstopdf --outfile=image4-eps-converted-to.pdf
  image4.eps>
-(epstopdf)             \includegraphics on input line 145.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
 
-<image4-eps-converted-to.pdf, id=177, 231.86626pt x 143.53625pt>
+<image4-eps-converted-to.pdf, id=268, 231.86626pt x 143.53625pt>
 File: image4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image4-eps-converted-to.pdf>
-Package pdftex.def Info: image4-eps-converted-to.pdf used on input line 145.
+Package pdftex.def Info: image4-eps-converted-to.pdf used on input line 195.
 (pdftex.def)             Requested size: 113.81102pt x 70.45602pt.
- [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image1-eps-convert
-ed-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image3-eps-
-converted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/imag
-e4-eps-converted-to.pdf>]
+ [3] [4 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image1-eps-con
+verted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image3-
+eps-converted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/
+image4-eps-converted-to.pdf>]
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.bbl
 Missing character: There is no � in font ptmr7t!
-) [3]
-(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 2035) in paragraph at lines 142--145
+[]\OT1/ptm/m/n/10 C.D. Jones, A.B. Smith, and E.F. Robert-s,  ``A
+ []
+
+[5]) [6
+
+] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2276 strings out of 495354
- 30575 string characters out of 3183467
- 93350 words of memory out of 3000000
- 5403 multiletter control sequences out of 15000+200000
- 21023 words of font info for 46 fonts, out of 3000000 for 9000
+ 2251 strings out of 495354
+ 30336 string characters out of 3183467
+ 94404 words of memory out of 3000000
+ 5382 multiletter control sequences out of 15000+200000
+ 20054 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,11n,23p,2433b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/u
-rw/courier/ucrr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
-D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软件/CTEX/MiKTeX/
-fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on Template.pdf (3 pages, 1079934 bytes).
+/fonts/type1/urw/times/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/
+utmbi8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/
+CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Template.pdf (6 pages, 3173942 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
+ 304 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

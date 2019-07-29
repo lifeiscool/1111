@@ -112,4 +112,51 @@ J.~Long, E.~Shelhamer, and T.~Darrell,
 \newblock in {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}, 2015, pp. 3431--3440.
 
+\bibitem{lowe2004distinctive}
+D.~G. Lowe,
+\newblock ``Distinctive image features from scale-invariant keypoints,''
+\newblock {\em IJCV}, vol. 60, pp. 91--110, 2004.
+
+\bibitem{dalal2005histograms}
+N.~Dalal and B.~Triggs,
+\newblock ``Histograms of oriented gradients for human detection,''
+\newblock in {\em CVPR}, 2005.
+
+\bibitem{bai2018sod}
+Y.~Bai, Y.~Zhang, M.~Ding, and B.~Ghanem,
+\newblock ``Sod-mtgan: Small object detection via multi-task generative
+  adversarial network,''
+\newblock in {\em ECCV}, 2018, pp. 206--221.
+
+\bibitem{lin2017feature}
+T.~Y. Lin, P.~Doll¨¢r, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
+\newblock ``Feature pyramid networks for object detection,''
+\newblock in {\em CVPR}, 2017, pp. 2117--2125.
+
+\bibitem{liu2016ssd}
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.~Y. Fu, and A.~C. Berg,
+\newblock ``Ssd: Single shot multibox detector,''
+\newblock in {\em ECCV}. Springer, 2016, pp. 21--37.
+
+\bibitem{xiang2014dictionary}
+C.D. Jones, A.B. Smith, and E.F. Roberts,
+\newblock ``A dictionary-based method for tire defect detection,''
+\newblock in {\em ICIA}. IEEE, 2014, pp. 519--523.
+
+\bibitem{zhang2015automatic}
+Y.~Zhang, D.~Lefebvre, and Q.~Li,
+\newblock ``Automatic detection of defects in tire radiographic images,''
+\newblock {\em IEEE Trans. on Automation Science and Engineering}, vol. 14, no.
+  3, pp. 1378--1386, 2015.
+
+\bibitem{zhou2018scale}
+P.~Zhou, B.~Ni, C.~Geng, J.~Hu, and Y.~Xu,
+\newblock ``Scale-transferrable object detection,''
+\newblock in {\em CVPR}, 2018, pp. 528--537.
+
+\bibitem{chen2016attention}
+L.~C. Chen, Y.~Yang, J.~Wang, W.~Xu, and A.~L. Yuille,
+\newblock ``Attention to scale: Scale-aware semantic image segmentation,''
+\newblock in {\em CVPR}, 2016, pp. 3640--3649.
+
 \end{thebibliography}
