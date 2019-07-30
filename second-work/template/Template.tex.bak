@@ -14,7 +14,8 @@
 
 
 %\name{Ren Wang{\rm\textsuperscript{1,2}}, Qiang Guo{\rm\textsuperscript{1,2}}, Shanmei Lu{\rm\textsuperscript{1,2}},  Caiming Zhang{\rm\textsuperscript{3}}}
-\name{Ren Wang{\rm\textsuperscript{1,2}}}
+\name{Ren Wang{\rm\textsuperscript{1,2}}, Qiang Guo{\rm\textsuperscript{1,2}},  Caiming Zhang{\rm\textsuperscript{3}}}
+%\name{Ren Wang{\rm\textsuperscript{1,2}}}
 \address{\textsuperscript{1}School of Computer Science and Technology, \\Shandong University of Finance and Economics, Jinan, China\\
         \textsuperscript{2}Shandong Provincial Key Laboratory of Digital Media Technology, Jinan, China\\
         \textsuperscript{3}Software College, Shandong University, Jinan, China}
@@ -26,7 +27,7 @@
 \maketitle
 
 \begin{abstract}
-Though automatic detection method has been tremendous improved, with the gradual penetration of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of its products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to exploit the small size of the cover edge features and small defects as much as possible. Finally, the pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
+Though automatic detection method has been tremendous improved, with the development of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to cover edge features and small defects as much as possible. Finally, pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
 \end{abstract}
 
 \begin{keywords}
@@ -35,7 +36,7 @@ Defect detection, Fully convolutional network, Semantic segmentation, Multi-scal
 
 \section{Introduction}
 \label{sec:intro}
-Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes, such as fabrics\cite{kumar2008computer,ngan2011automated,li2016deformable}, steel\cite{ghorai2012automatic}, semiconductors\cite{bai2014saliency}, and solar wafers\cite{tsai2012defect}. Especially in tire manufacturing, numerous detection algorithms have been proposed\cite{zhang2013texture,cui2016defect,cui2016novel,zhang2018tire,guo2016defect} and aroused extensive attention over the past two decades. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities\cite{guo2012tire}. Then, the defective product is hierarchical processed according to the location and size of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study\cite{zhang2013defect,wang2019tire}, most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
+Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes, such as fabrics\cite{kumar2008computer,ngan2011automated,li2016deformable}, steel\cite{ghorai2012automatic}, semiconductors\cite{bai2014saliency}, and solar wafers\cite{tsai2012defect}. Especially in tire manufacturing, numerous detection algorithms have been proposed\cite{zhang2013texture,cui2016defect,cui2016novel,zhang2018tire,guo2016defect} and aroused extensive attention recently. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities\cite{guo2012tire}. Then, the defective product is hierarchical processed according to the location and size of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study\cite{zhang2013defect,wang2019tire}, most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
 
 \begin{figure}[t]
   \centering
@@ -132,7 +133,14 @@ in capital and lower case letters.  Papers with multiple authors and
 affiliations may require two or more lines for this information. Please note
 that papers should not be submitted blind; include the authors' names on the
 PDF.
-
+\begin{figure*}[t]
+  \centering
+  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
+\end{figure*}
+\begin{figure*}[t]
+  \centering
+  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
+\end{figure*}
 The paper title (on the first page) should begin 1.38 inches (35 mm) from the
 top edge of the page, centered, completely capitalized, and in Times 14-point,
 boldface type.  The authors' name(s) and affiliation(s) appear below the title
@@ -159,20 +167,12 @@ List and number all bibliographical references at the end of the
 paper. The references can be numbered in alphabetic order or in
 order of appearance in the document. When referring to them in
 the text, type the corresponding reference number in square
-brackets as shown at the end of this sentence \cite{dalal2005histograms}. An
+brackets as shown at the end of this sentence \cite{dalal2005histograms}\cite{bai2018sod,bai2014saliency,cui2016defect,cui2016novel,cui2018tire,dalal2005histograms,ghorai2012automatic,guo2012tire,guo2016defect,kumar2008computer,li2016deformable,lin2017feature,liu2016ssd,long2015fully,lowe2004distinctive,ngan2011automated,tsai2012defect,wang2019tire,xiang2014dictionary,yan2013detection,zhang2013defect,zhang2015automatic,zhang2013texture,zhang2018tire,zhao2017tire,zhou2018scale,chen2016attention}. An
 additional final page (the fifth page, in most cases) is
 allowed, but must contain only references to the prior
 literature.
 
-\begin{figure*}[t]
-  \centering
-  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
-\end{figure*}
-\begin{figure*}[t]
-  \centering
-  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
-  \caption{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. }
-\end{figure*}
+
 
 \begin{figure}[htb]
 
@@ -206,17 +206,6 @@ literature.
 \subsubsection{Sub-subheadings}
 \label{sssec:subsubhead}
 
-In LaTeX, to start a new column (but not a new page) and help balance the
-last-page column lengths, you can use the command ``$\backslash$pagebreak'' as
-demonstrated on this page (see the LaTeX source below).
-In LaTeX, to start a new column (but not a new page) and help balance the
-last-page column lengths, you can use the command ``$\backslash$pagebreak'' as
-demonstrated on this page (see the LaTeX source below).
-
-Since there are many ways, often incompatible, of including images (e.g., with
-experimental results) in a LaTeX document, below is an example of how to do
-this \cite{dalal2005histograms}.
-
 List and number all bibliographical references at the end of the
 paper. The references can be numbered in alphabetic order or in
 order of appearance in the document. When referring to them in
@@ -225,12 +214,6 @@ brackets as shown at the end of this sentence \cite{dalal2005histograms}. An
 additional final page (the fifth page, in most cases) is
 allowed, but must contain only references to the prior
 literature.
-
-These guidelines include complete descriptions of the fonts, spacing, and
-related information for producing your proceedings manuscripts. Please follow
-them and if you have any questions, direct them to Conference Management
-Services, Inc.: Phone +1-979-846-6800 or email
-to \\\texttt{icassp2019@cmsworkshops.com}.
 
 % Below is an example of how to insert images. Delete the ``\vspace'' line,
 % uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''

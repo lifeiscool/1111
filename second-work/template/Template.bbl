@@ -6,11 +6,6 @@ A.~Kumar,
 \newblock {\em IEEE Trans. on Industrial Electronics}, vol. 55, no. 1, pp.
   348--363, 2008.
 
-\bibitem{ngan2011automated}
-H.~Y. Ngan, G.~K. Pang, and N.~H. Yung,
-\newblock ``Automated fabric defect detection¡ªa review,''
-\newblock {\em Image and Vision Computing}, vol. 29, no. 7, pp. 442--458, 2011.
-
 \bibitem{li2016deformable}
 Y.~Li, W.~Zhao, and J.~Pan,
 \newblock ``Deformable patterned fabric defect detection with fisher
@@ -24,37 +19,11 @@ S.~Ghorai, A.~Mukherjee, M.~Gangadaran, and P.~K. Dutta,
 \newblock {\em IEEE Trans. on Instrumentation and Measurement}, vol. 62, no. 3,
   pp. 612--621, 2012.
 
-\bibitem{bai2014saliency}
-X.~Bai, Y.~Fang, W.~Lin, L.~Wang, and B.~F. Ju,
-\newblock ``Saliency-based defect detection in industrial images by using phase
-  spectrum,''
-\newblock {\em IEEE Trans. on Industrial Informatics}, vol. 10, no. 4, pp.
-  2135--2145, 2014.
-
-\bibitem{tsai2012defect}
-D.~M. Tsai, S.~C. Wu, and W.~Y. Chiu,
-\newblock ``Defect detection in solar modules using ica basis images,''
-\newblock {\em IEEE Trans. on Industrial Informatics}, vol. 9, no. 1, pp.
-  122--131, 2012.
-
 \bibitem{zhang2013texture}
 C.~Zhang, X.~Li, Q.~Guo, X.~Yu, and C.~Zhang,
 \newblock ``Texture-invariant detection method for tire crack,''
 \newblock {\em Journal of Computer-Aided Design \& Computer Graphics}, vol. 25,
   no. 6, pp. 809--816, 2013.
-
-\bibitem{cui2016defect}
-X.~Cui, Y.~Liu, and C.~Wang,
-\newblock ``Defect automatic detection for tire x-ray images using inverse
-  transformation of principal component residual,''
-\newblock in {\em AIPR}. IEEE, 2016, pp. 1--8.
-
-\bibitem{cui2016novel}
-X.~H. Cui, Y.~Liu, C.~X. Wang, and H.~Li,
-\newblock ``A novel method for feature extraction and automatic recognition of
-  tire defects using independent component analysis,''
-\newblock {\em DEStech Transactions on Materials Science and Engineering}, ,
-  no. icimm, 2016.
 
 \bibitem{zhang2018tire}
 Y.~Zhang, X.~Cui, Y.~Liu, and B.~Yu,
@@ -86,18 +55,30 @@ R.~Wang, Q.~Guo, S.~Lu, and C.~Zhang,
 \newblock ``Tire defect detection using fully convolutional network,''
 \newblock {\em IEEE Access}, vol. 7, pp. 43502--43510, 2019.
 
+\bibitem{cui2016defect}
+X.~Cui, Y.~Liu, and C.~Wang,
+\newblock ``Defect automatic detection for tire x-ray images using inverse
+  transformation of principal component residual,''
+\newblock in {\em AIPR}. IEEE, 2016, pp. 1--8.
+
+\bibitem{cui2016novel}
+X.~H. Cui, Y.~Liu, C.~X. Wang, and H.~Li,
+\newblock ``A novel method for feature extraction and automatic recognition of
+  tire defects using independent component analysis,''
+\newblock {\em DEStech Transactions on Materials Science and Engineering}, ,
+  no. icimm, 2016.
+
+\bibitem{zhang2015automatic}
+Y.~Zhang, D.~Lefebvre, and Q.~Li,
+\newblock ``Automatic detection of defects in tire radiographic images,''
+\newblock {\em IEEE Trans. on Automation Science and Engineering}, vol. 14, no.
+  3, pp. 1378--1386, 2015.
+
 \bibitem{yan2013detection}
 Z.~Yan, L.~Tao, and L.~Qing-Ling,
 \newblock ``Detection of foreign bodies and bubble defects in tire radiography
   images based on total variation and edge detection,''
 \newblock {\em Chinese Physics Letters}, vol. 30, no. 8, pp. 084205, 2013.
-
-\bibitem{zhao2017tire}
-S.~Zhao, Z.~Chen, B.~Li, and B.~Zhang,
-\newblock ``Tire x-ray image impurity detection based on multiple kernel
-  learning,''
-\newblock in {\em Pacific Rim Conference on Multimedia}. Springer, 2017, pp.
-  346--355.
 
 \bibitem{cui2018tire}
 X.~Cui, Y.~Liu, Y.~Zhang, and C.~Wang,
@@ -128,6 +109,13 @@ Y.~Bai, Y.~Zhang, M.~Ding, and B.~Ghanem,
   adversarial network,''
 \newblock in {\em ECCV}, 2018, pp. 206--221.
 
+\bibitem{bai2014saliency}
+X.~Bai, Y.~Fang, W.~Lin, L.~Wang, and B.~F. Ju,
+\newblock ``Saliency-based defect detection in industrial images by using phase
+  spectrum,''
+\newblock {\em IEEE Trans. on Industrial Informatics}, vol. 10, no. 4, pp.
+  2135--2145, 2014.
+
 \bibitem{lin2017feature}
 T.~Y. Lin, P.~Doll¨¢r, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
 \newblock ``Feature pyramid networks for object detection,''
@@ -138,16 +126,28 @@ W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.~Y. Fu, and A.~C. Berg,
 \newblock ``Ssd: Single shot multibox detector,''
 \newblock in {\em ECCV}. Springer, 2016, pp. 21--37.
 
+\bibitem{ngan2011automated}
+H.~Y. Ngan, G.~K. Pang, and N.~H. Yung,
+\newblock ``Automated fabric defect detection-a review,''
+\newblock {\em Image and Vision Computing}, vol. 29, no. 7, pp. 442--458, 2011.
+
+\bibitem{tsai2012defect}
+D.~M. Tsai, S.~C. Wu, and W.~Y. Chiu,
+\newblock ``Defect detection in solar modules using ica basis images,''
+\newblock {\em IEEE Trans. on Industrial Informatics}, vol. 9, no. 1, pp.
+  122--131, 2012.
+
 \bibitem{xiang2014dictionary}
 C.D. Jones, A.B. Smith, and E.F. Roberts,
 \newblock ``A dictionary-based method for tire defect detection,''
 \newblock in {\em ICIA}. IEEE, 2014, pp. 519--523.
 
-\bibitem{zhang2015automatic}
-Y.~Zhang, D.~Lefebvre, and Q.~Li,
-\newblock ``Automatic detection of defects in tire radiographic images,''
-\newblock {\em IEEE Trans. on Automation Science and Engineering}, vol. 14, no.
-  3, pp. 1378--1386, 2015.
+\bibitem{zhao2017tire}
+S.~Zhao, Z.~Chen, B.~Li, and B.~Zhang,
+\newblock ``Tire x-ray image impurity detection based on multiple kernel
+  learning,''
+\newblock in {\em Pacific Rim Conference on Multimedia}. Springer, 2017, pp.
+  346--355.
 
 \bibitem{zhou2018scale}
 P.~Zhou, B.~Ni, C.~Geng, J.~Hu, and Y.~Xu,

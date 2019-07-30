@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  29 JUL 2019 19:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  30 JUL 2019 17:55
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -242,15 +242,22 @@ File: pic2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: pic2-eps-converted-to.pdf used on input line 50.
 (pdftex.def)             Requested size: 435.55508pt x 140.63509pt.
 
-Underfull \vbox (badness 4673) has occurred while \output is active []
+Underfull \hbox (badness 1163) in paragraph at lines 55--56
+\OT1/ptm/m/n/10 meth-od-s are most-ly de-vot-ed to dis-tin-guish-ing d-if-fer-e
+nce
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{D:/软件/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
 
  <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic1-eps-converted-to
-.pdf>] [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-eps-con
-verted-to.pdf>]
+.pdf>]
+[2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-eps-converted-
+to.pdf>]
 Package epstopdf Info: Source file: <pic2.eps>
 (epstopdf)                    date: 2019-07-29 14:38:17
 (epstopdf)                    size: 38318709 bytes
@@ -262,7 +269,7 @@ ic2.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 File: pic2-eps-converted-to.pdf Graphic file (type pdf)
-<use pic2-eps-converted-to.pdf>
+ <use pic2-eps-converted-to.pdf>
 Package pdftex.def Info: pic2-eps-converted-to.pdf used on input line 138.
 (pdftex.def)             Requested size: 435.55508pt x 140.63509pt.
 Package epstopdf Info: Source file: <pic2.eps>
@@ -335,11 +342,10 @@ verted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/image3-
 eps-converted-to.pdf> <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/
 image4-eps-converted-to.pdf>]
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.bbl
-Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 
-Underfull \hbox (badness 2035) in paragraph at lines 142--145
+Underfull \hbox (badness 2035) in paragraph at lines 141--144
 []\OT1/ptm/m/n/10 C.D. Jones, A.B. Smith, and E.F. Robert-s,  ``A
  []
 
@@ -353,16 +359,16 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2251 strings out of 495354
  30336 string characters out of 3183467
- 94404 words of memory out of 3000000
+ 93404 words of memory out of 3000000
  5382 multiletter control sequences out of 15000+200000
  20054 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,11n,23p,2433b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,23p,2132b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
 /fonts/type1/urw/times/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/
 utmbi8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/
 CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (6 pages, 3173942 bytes).
+Output written on Template.pdf (6 pages, 3173098 bytes).
 PDF statistics:
  304 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
