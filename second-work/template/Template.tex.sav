@@ -1,0 +1,264 @@
+% Template for ICASSP-2019 paper; to be used with:
+%          spconf.sty  - ICASSP/ICIP LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{spconf,amsmath,graphicx,epstopdf,float}
+
+% Example definitions.
+% --------------------
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+\title{Multi-scale Defect Detection Network for Tire X-ray Images}
+
+
+%\name{Ren Wang{\rm\textsuperscript{1,2}}, Qiang Guo{\rm\textsuperscript{1,2}}, Shanmei Lu{\rm\textsuperscript{1,2}},  Caiming Zhang{\rm\textsuperscript{3}}}
+\name{Ren Wang{\rm\textsuperscript{1,2}}, Qiang Guo{\rm\textsuperscript{1,2}},  Caiming Zhang{\rm\textsuperscript{3}}}
+%\name{Ren Wang{\rm\textsuperscript{1,2}}}
+\address{\textsuperscript{1}School of Computer Science and Technology, \\Shandong University of Finance and Economics, Jinan, China\\
+        \textsuperscript{2}Shandong Provincial Key Laboratory of Digital Media Technology, Jinan, China\\
+        \textsuperscript{3}Software College, Shandong University, Jinan, China}
+
+
+\begin{document}
+%\ninept
+
+\maketitle
+
+\begin{abstract}
+Though automatic detection method has been tremendous improved, with the development of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to cover edge features and small defects as much as possible. Finally, pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
+\end{abstract}
+
+\begin{keywords}
+Defect detection, Fully convolutional network, Semantic segmentation, Multi-scale context
+\end{keywords}
+
+\section{Introduction}
+\label{sec:intro}
+Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes \cite{kumar2008computer,li2016deformable,ghorai2012automatic}. Especially in tire manufacturing, numerous detection algorithms have been proposed \cite{zhang2013texture,zhang2018tire,xiang2014dictionary} and aroused extensive attention recently. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities \cite{guo2016defect}. Then, the defective product is hierarchical processed according to the location and area of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study \cite{zhang2013defect,wang2019tire}, most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
+\begin{figure}[t]
+  \centering
+  \centerline{\includegraphics[width=0.5\textwidth]{pic1.eps}}
+  \caption{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom}
+\end{figure}
+\begin{figure*}[t]
+  \centering
+  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
+  \caption{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. }
+\end{figure*}
+
+At present, existing computer vision based detection methods are mostly devoted to distinguishing difference between defective regions and background (defective-free regions). A key issue for such methods is feature extraction. Guo {\it et al}. \cite{guo2012tire} proposed a component decomposition based method to detect tire defects, which separated the background from the image by means of two designed filters. Then through an adaptive thresholding processing, defects were derived from the residual image. Besides, Independent component analysis was also used for defect detection tasks \cite{cui2016defect,cui2016novel}. A major disadvantage of these fundamental methods is the limitation of the information contained in low-level clues and domain features. To address the limitation, Zhang {\it et al}. \cite{zhang2013defect,zhang2015automatic} introduced mulit-scale wavelet and curvelet transform, in detection tasks respectively. Furthermore, optimized edge detection and total variation algorithm are used to achieve more accurate results \cite{yan2013detection}. However, the representation capability of fixed kernels is not comprehensive enough. Moreover, transform processes are computationally expensive. Recently, Cui {\it et al}. \cite{cui2018tire} attempted to classify tire defects by means of convolutional neural networks, which has outstanding performance in the recognition and segmentation tasks of natural images. With the excellent feature extraction capability of deep convolutional network (ConvNets), Wang {\it et al}. \cite{wang2019tire} further implemented the detection and segmentation in tire images by a fully convolutional network (FCN) \cite{long2015fully}. However, Due to the existence of pooling layers, FCN is not sensitive to small defects and edge details, which is similar to that in dealing with natural image tasks.
+
+
+
+To overcome these shortcomings, many methods have been proposed in benchmark datasets. Most of them are based on multi-scale strategies and can be roughly classifified into image pyramids and in-network feature hierarchies. Image pyramids were directly scaled to get multi-scale images and extensively used in the era of hand-crafted features \cite{lowe2004distinctive,dalal2005histograms}, as shown in Figure 1(a). Even if the crafted features have largely been replaced by self-learning features, multi-scale testings on the image pyramid are still used to verify the adaptability and robustness ({\it e.g.}, \cite{he2016deep}). Nevertheless, image pyramid based methods is impractical for real applications due to the considerable increase in inference time. In-network feature hierarchies are formed by the forward propagation within deep ConvNets. Through several of sub-sampling layers, in-network hierarchies produce feature maps of different spatial resolutions, with an multi-scale and pyramid shape\cite{lin2017feature}. By fusing these multi-scale feature maps, features in shallow and deep layers can be perceived. The Single Shot Detector (SSD) \cite{liu2016ssd} is one of the first attempts at combining predictions from these features maps to detect objects of various sizes. Generally, shallow features are used to predict small objects, and deep features with large receptive fields are used to detect large objects. However, the lack of semantic information is harmful to the detection of small targets in shallow layers. Another fusing way can effectively address this problem by concatenating multi-scale features and detecting on top of the expanded feature maps, as shown by the red line in Figure 1b[]. For example, FCN defined a skip architecture to produce more accurate segmentation. Similar top-down skip architectures are popular in recent research\cite{newell2016stacked,ghiasi2016laplacian}. There exists a basic problem that it is still not enough to mine the detail texture in these structures\cite{zhou2018scale}. Moreover, small targets will become smaller or even disappear as the increases of sub-sampling layers, even if they can be captured in shallow layers.
+ 
+Inspired by MTGAN, we construct a end-to-end network named Multi-scale Defect Detection Network (MDDN) consisting of a semantic-aware sub-network and a texture-aware sub-network. Based on tire X-ray images, a image patch strategy is adopted in the texture-aware sub-network. Unlike natural image patches, defects (objects) are still significant and discernible in the tire image patches, as shown in Figure 1(c). On the one hand, The proportion of the area of defective regions in images increases, which is advantageous for better capturing of detailed information. As shown in Figure 1(d), for a 256*256 tire image, the proportion of defects is increased from *** to ***. On the other hand, image patches as input data can be used without reducing the number of parame
+ters in the case of reducing the pooling layer. On the other hand, sub-sampling layers can be discarded to retain more shallow features without increasing the parameters.
+
+%\Figure[t!][width=0.86\textwidth]{test1.eps}
+%{Detection results of several benchmark architecture. (a) shows input tire images with different defects. From top to bottom, the first four are tire sidewall images, which involve following defect types: impurity, overlap, slack, bubble. The last two are tire tread images, which involve overlaps. (b) indicates ground truths obtained by manual marking. (c),(d),(e) and (f) are detection results using AlexNet, VGG11, VGG13 and VGG16 as the basic architecture, respectively. \label{fig1}}
+
+\section{Multi-scale Defect Detection Network}
+\label{sec:format}
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+All printed material, including text, illustrations, and charts, must be kept
+within a print area of 7 inches (178 mm) wide by 9 inches (229 mm) high. Do
+not write or print anything outside the print area. The top margin must be 1
+inch (25 mm), except for the title page, and the left margin must be 0.75 inch
+(19 mm).  All {\it text} must be in a two-column format. Columns are to be 3.39
+inches (86 mm) wide, with a 0.24 inch (6 mm) space between them. Text must be
+fully justified.
+
+
+\section{EXPERIMENTS}
+\label{sec:pagestyle}
+
+The paper title (on the first page) should begin 1.38 inches (35 mm) from the
+top edge of the page, centered, completely capitalized, and in Times 14-point,
+boldface type.  The authors' name(s) and affiliation(s) appear below the title
+in capital and lower case letters.  Papers with multiple authors and
+affiliations may require two or more lines for this information. Please note
+that papers should not be submitted blind; include the authors' names on the
+PDF.
+\begin{figure*}[t]
+  \centering
+  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
+\end{figure*}
+\begin{figure*}[t]
+  \centering
+  \centerline{\includegraphics[width=0.86\textwidth]{pic2.eps}}
+\end{figure*}
+The paper title (on the first page) should begin 1.38 inches (35 mm) from the
+top edge of the page, centered, completely capitalized, and in Times 14-point,
+boldface type.  The authors' name(s) and affiliation(s) appear below the title
+in capital and lower case letters.  Papers with multiple authors and
+affiliations may require two or more lines for this information. Please note
+that papers should not be submitted blind; include the authors' names on the
+PDF.
+
+The paper title (on the first page) should begin 1.38 inches (35 mm) from the
+top edge of the page, centered, completely capitalized, and in Times 14-point,
+boldface type.  The authors' name(s) and affiliation(s) appear below the title
+in capital and lower case letters.  Papers with multiple authors and
+affiliations may require two or more lines for this information. Please note
+that papers should not be submitted blind; include the authors' names on the
+PDF.
+
+\subsubsection{Sub-subheadings}
+\label{sssec:subsubhead}
+Since there are many ways, often incompatible, of including images (e.g., with
+experimental results) in a LaTeX document, below is an example of how to do
+this \cite{dalal2005histograms}.
+
+List and number all bibliographical references at the end of the
+paper. The references can be numbered in alphabetic order or in
+order of appearance in the document. When referring to them in
+the text, type the corresponding reference number in square
+brackets as shown at the end of this sentence \cite{dalal2005histograms}\cite{bai2018sod,bai2014saliency,cui2016defect,cui2016novel,cui2018tire,dalal2005histograms,ghorai2012automatic,guo2012tire,guo2016defect,kumar2008computer,li2016deformable,lin2017feature,liu2016ssd,long2015fully,lowe2004distinctive,wang2019tire,xiang2014dictionary,yan2013detection,zhang2013defect,zhang2015automatic,zhang2013texture,zhang2018tire,zhao2017tire,zhou2018scale,chen2016attention}. An
+additional final page (the fifth page, in most cases) is
+allowed, but must contain only references to the prior
+literature.
+
+
+
+\begin{figure}[htb]
+
+\begin{minipage}[b]{1.0\linewidth}
+  \centering
+  \centerline{\includegraphics[width=8.5cm]{image1.eps}}
+%  \vspace{2.0cm}
+  \centerline{(a) Result 1}\medskip
+\end{minipage}
+%
+\begin{minipage}[b]{.48\linewidth}
+  \centering
+  \centerline{\includegraphics[width=4.0cm]{image3.eps}}
+%  \vspace{1.5cm}
+  \centerline{(b) Results 3}\medskip
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.48\linewidth}
+  \centering
+  \centerline{\includegraphics[width=4.0cm]{image4.eps}}
+%  \vspace{1.5cm}
+  \centerline{(c) Result 4}\medskip
+\end{minipage}
+%
+\caption{Example of placing a figure with experimental results.}
+\label{fig:res}
+%
+\end{figure}
+
+
+\subsubsection{Sub-subheadings}
+\label{sssec:subsubhead}
+
+List and number all bibliographical references at the end of the
+paper. The references can be numbered in alphabetic order or in
+order of appearance in the document. When referring to them in
+the text, type the corresponding reference number in square
+brackets as shown at the end of this sentence \cite{dalal2005histograms}. An
+additional final page (the fifth page, in most cases) is
+allowed, but must contain only references to the prior
+literature.
+
+% Below is an example of how to insert images. Delete the ``\vspace'' line,
+% uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''
+% with a suitable PostScript file name.
+% -------------------------------------------------------------------------
+
+
+\section{CONCLUSION}
+\label{sec:typestyle}
+
+
+
+
+To achieve the best rendering both in printed proceedings and electronic proceedings, we
+strongly encourage you to use Times-Roman font.  In addition, this will give
+the proceedings a more uniform look.  Use a font that is no smaller than nine
+point type throughout the paper, including figure captions.
+
+In nine point type font, capital letters are 2 mm high.  {\bf If you use the
+smallest point size, there should be no more than 3.2 lines/cm (8 lines/inch)
+vertically.}  This is a minimum spacing; 2.75 lines/cm (7 lines/inch) will make
+the paper much more readable.  Larger type sizes require correspondingly larger
+vertical spacing.  Please do not double-space your paper.  TrueType or
+Postscript Type 1 fonts are preferred.
+
+The first paragraph in each section should not be indented, but all the
+following paragraphs within the section should be indented as these paragraphs
+demonstrate.
+
+
+
+
+% To start a new column (but not a new page) and help balance the last-page
+% column length use \vfill\pagebreak.
+% -------------------------------------------------------------------------
+%\vfill
+%\pagebreak
+
+\vfill\pagebreak
+
+
+
+
+% References should be produced using the bibtex program from suitable
+% BiBTeX files (here: strings, refs, manuals). The IEEEbib.bst bibliography
+% style file from IEEE produces unsorted bibliography list.
+% -------------------------------------------------------------------------
+\bibliographystyle{IEEEbib}
+\bibliography{strings,refs}
+
+\end{document}

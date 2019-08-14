@@ -37,6 +37,51 @@
   number = "6",
   pages = "809-816",
 }
+@article{zhang2018tire,
+  author = "Zhang, Y. and Cui, X. and Liu, Y. and Yu, B.",
+  title = "Tire defects classification using convolution architecture for fast feature embedding",
+  journal = "International Journal of Computational Intelligence Systems",
+  year = "2018",
+  volume = "11",
+  number = "1",
+  pages = "1056-1066",
+  publisher = "Atlantis Press"
+}
+@InProceedings{xiang2014dictionary,
+  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
+  title =        "A dictionary-based method for tire defect detection",
+  booktitle =        "ICIA",
+  organization = "IEEE",
+  year = 	 "2014",
+  pages = 	 "519-523"
+}
+@article{guo2016defect,
+  author = "Guo, Q. and Zhang, C. and Liu, H. and Zhang, X.",
+  title = "Defect detection in tire X-Ray images using weighted texture dissimilarity",
+  journal = "Journal of Sensors",
+  year = "2016",
+  volume = "2016",
+  publisher = "Hindawi"
+}
+@article{wang2019tire,
+  author = "Wang, R. and Guo, Q. and Lu, S. and Zhang, C.",
+  title = "Tire Defect Detection Using Fully Convolutional Network",
+  journal = "IEEE Access",
+  year = "2019",
+  volume = "7",
+  pages = "43502--43510",
+  publisher = "IEEE"
+}
+@article{guo2012tire,
+  author = "Guo, Q. and Wei, Z. W.",
+  title = "Tire defect detection using image component decomposition",
+  journal = "Research Journal of Applied Sciences, Engineering and Technology",
+  year = "2012",
+  volume = "4",
+  number = "1",
+  pages = "41-44",
+  publisher = "Maxwell Science Publishing"
+}
 @InProceedings{cui2016defect,
   author = 	 "Cui, X. and Liu, Y. and Wang, C.",
   title =        "Defect automatic detection for tire X-ray images using inverse transformation of principal component residual",
@@ -52,34 +97,6 @@
   year = "2016",
   number = "icimm",
 }
-@article{zhang2018tire,
-  author = "Zhang, Y. and Cui, X. and Liu, Y. and Yu, B.",
-  title = "Tire defects classification using convolution architecture for fast feature embedding",
-  journal = "International Journal of Computational Intelligence Systems",
-  year = "2018",
-  volume = "11",
-  number = "1",
-  pages = "1056-1066",
-  publisher = "Atlantis Press"
-}
-@article{guo2016defect,
-  author = "Guo, Q. and Zhang, C. and Liu, H. and Zhang, X.",
-  title = "Defect detection in tire X-Ray images using weighted texture dissimilarity",
-  journal = "Journal of Sensors",
-  year = "2016",
-  volume = "2016",
-  publisher = "Hindawi"
-}
-@article{guo2012tire,
-  author = "Guo, Q. and Wei, Z. W.",
-  title = "Tire defect detection using image component decomposition",
-  journal = "Research Journal of Applied Sciences, Engineering and Technology",
-  year = "2012",
-  volume = "4",
-  number = "1",
-  pages = "41-44",
-  publisher = "Maxwell Science Publishing"
-}
 @article{zhang2013defect,
   author = "Zhang, Y. and Li, T. and Li, Q.",
   title = "Defect detection for tire laser shearography image using curvelet transform based edge detector",
@@ -88,24 +105,6 @@
   volume = "47",
   pages = "64-71",
   publisher = "Elsevier"
-}
-@article{yan2013detection,
-  author = "Yan, Z. and Tao, L. and Qing-Ling, L.",
-  title = "Detection of foreign bodies and bubble defects in tire radiography images based on total variation and edge detection",
-  journal = "Chinese Physics Letters",
-  year = "2013",
-  volume = "30",
-  number = "8",
-  pages = "084205",
-  publisher = "IOP Publishing"
-}
-@InProceedings{zhao2017tire,
-  author = 	 "Zhao, S. and Chen, Z. and Li, B. and Zhang, B.",
-  title =        "Tire X-ray Image Impurity Detection Based on Multiple Kernel Learning",
-  booktitle =        "Pacific Rim Conference on Multimedia",
-  organization = "Springer",
-  year = 	 "2017",
-  pages = 	 "346-355"
 }
 @article{zhang2015automatic,
   author = "Zhang, Y. and Lefebvre, D. and Li, Q.",
@@ -117,13 +116,15 @@
   pages = "1378--1386",
   publisher = "IEEE"
 }
-@InProceedings{xiang2014dictionary,
-  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
-  title =        "A dictionary-based method for tire defect detection",
-  booktitle =        "ICIA",
-  organization = "IEEE",
-  year = 	 "2014",
-  pages = 	 "519-523"
+@article{yan2013detection,
+  author = "Yan, Z. and Tao, L. and Qing-Ling, L.",
+  title = "Detection of foreign bodies and bubble defects in tire radiography images based on total variation and edge detection",
+  journal = "Chinese Physics Letters",
+  year = "2013",
+  volume = "30",
+  number = "8",
+  pages = "084205",
+  publisher = "IOP Publishing"
 }
 @article{cui2018tire,
   author = "Cui, X. and Liu, Y. and Zhang, Y. and Wang, C.",
@@ -135,21 +136,34 @@
   pages = "1850011",
   publisher = "World Scientific"
 }
-@article{wang2019tire,
-  author = "Wang, R. and Guo, Q. and Lu, S. and Zhang, C.",
-  title = "Tire Defect Detection Using Fully Convolutional Network",
-  journal = "IEEE Access",
-  year = "2019",
-  volume = "7",
-  pages = "43502--43510",
-  publisher = "IEEE"
-}
 @InProceedings{long2015fully,
   author = 	 "Long, J. and Shelhamer, E. and Darrell, T.",
   title =        "Fully convolutional networks for semantic segmentation",
-  booktitle =        "Proceedings of the IEEE conference on computer vision and pattern recognition",
+  booktitle =        "CVPR",
   year = 	 "2015",
   pages = 	 "3431-3440"
+}
+@article{lowe2004distinctive,
+  author = "Lowe, D. G.",
+  title = "Distinctive image features from scale-invariant keypoints",
+  journal = "IJCV",
+  year = "2004",
+  volume = "60",
+  pages = "91-110",
+  publisher = "Springer"
+}
+@InProceedings{dalal2005histograms,
+  author = "Dalal, N. and Triggs, B.",
+  title = "Histograms of oriented gradients for human detection",
+  booktitle = "CVPR",
+  year = "2005",
+}
+@InProceedings{he2016deep,
+  author = 	 "He, K. and Zhang, X. and Ren, S. and Sun, J.",
+  title =        "Deep residual learning for image recognition",
+  booktitle =        "CVPR",
+  year = 	 "2016",
+  pages = 	 "770-778"
 }
 @InProceedings{lin2017feature,
   author = 	 "Lin, T. Y. and Doll¨¢r, P. and Girshick, R. and He, K. and Hariharan, B. and Belongie, S.",
@@ -166,71 +180,40 @@
   pages = 	 "21-37",
   organization="Springer"
 }
+@InProceedings{newell2016stacked,
+  author = "Newell, A. and Yang, K. and Deng, J.",
+  title = "Stacked hourglass networks for human pose estimation",
+  booktitle = "ECCV",
+  year = "2016",
+  pages = "483-499",
+  organization="Springer"
+}
+@InProceedings{ghiasi2016laplacian,
+  author = "Ghiasi, G. and Fowlkes, C. C.",
+  title = "Laplacian pyramid reconstruction and refinement for semantic segmentation",
+  booktitle = "ECCV",
+  year = "2016",
+  pages = "519-534",
+  organization="Springer"
+}
 @InProceedings{zhou2018scale,
   author = "Zhou, P. and Ni, B. and Geng, C. and Hu, J. and Xu, Y.",
   title = "Scale-transferrable object detection",
   booktitle = "CVPR",
   year = "2018",
-  pages = "528-537",
-}
-@InProceedings{dalal2005histograms,
-  author = "Dalal, N. and Triggs, B.",
-  title = "Histograms of oriented gradients for human detection",
-  booktitle = "CVPR",
-  year = "2005",
-}
-@article{lowe2004distinctive,
-  author = "Lowe, D. G.",
-  title = "Distinctive image features from scale-invariant keypoints",
-  journal = "IJCV",
-  year = "2004",
-  volume = "60",
-  pages = "91-110",
-  publisher = "Springer"
+  pages = "528-537"
 }
 @InProceedings{bai2018sod,
   author = "Bai, Y. and Zhang, Y. and Ding, M. and Ghanem, B.",
   title = "Sod-mtgan: Small object detection via multi-task generative adversarial network",
   booktitle = "ECCV",
   pages = "206-221",
-  year = "2018",
+  year = "2018"
 }
 @InProceedings{chen2016attention,
   author = "Chen, L. C. and Yang, Y. and Wang, J. and Xu, W. and Yuille, A. L.",
   title = "Attention to scale: Scale-aware semantic image segmentation",
   booktitle = "CVPR",
   pages = "3640-3649",
-  year = "2016",
-}
-
-
-@article{ngan2011automated,
-  author = "Ngan, H. Y. and Pang, G. K. and Yung, N. H.",
-  title = "Automated fabric defect detection\¡ªa review",
-  journal = "Image and Vision Computing",
-  year = "2011",
-  volume = "29",
-  number = "7",
-  pages = "442-458",
-  publisher = "Elsevier"
-}
-@article{bai2014saliency,
-  author = "Bai, X. and Fang, Y. and Lin, W. and Wang, L. and Ju, B. F.",
-  title = "Saliency-based defect detection in industrial images by using phase spectrum",
-  journal = "IEEE Trans. on Industrial Informatics",
-  year = "2014",
-  volume = "10",
-  number = "4",
-  pages = "2135-2145",
-  publisher = "IEEE"
-}
-@article{tsai2012defect,
-  author = "Tsai, D. M. and Wu, S. C. and Chiu, W. Y. ",
-  title = "Defect detection in solar modules using ICA basis images",
-  journal = "IEEE Trans. on Industrial Informatics",
-  year = "2012",
-  volume = "9",
-  number = "1",
-  pages = "122-131",
-  publisher = "IEEE"
+  year = "2016"
 }
