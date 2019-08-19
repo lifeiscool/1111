@@ -95,7 +95,7 @@
   title = "A Novel Method for Feature Extraction and Automatic Recognition of Tire Defects Using Independent Component Analysis",
   journal = "DEStech Transactions on Materials Science and Engineering",
   year = "2016",
-  number = "icimm",
+  number = "icimm"
 }
 @article{zhang2013defect,
   author = "Zhang, Y. and Li, T. and Li, Q.",
@@ -216,4 +216,13 @@
   booktitle = "CVPR",
   pages = "3640-3649",
   year = "2016"
+}
+
+@InProceedings{dong2016accelerating,
+  author = "Dong, C. and Loy, C. C. and Tang, X.",
+  title = "Accelerating the super-resolution convolutional neural network",
+  booktitle = "ECCV",
+  pages = "391-407",
+  year = "2016"
+  organization = "Springer"
 }

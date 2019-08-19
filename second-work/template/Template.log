@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  15 AUG 2019 09:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  19 AUG 2019 16:32
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -252,160 +252,39 @@ nce
 .pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-3-eps-convert
+ed-to.pdf>]
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Á in font ptmr7t!
 
-Underfull \hbox (badness 2205) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Overfull \hbox (5.98357pt too wide) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 network.This is Semantic-aware sub-network.This is Semantic-
- []
-
-
-Underfull \hbox (badness 2547) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 aware sub-network.This is Semantic-aware sub-network.
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Overfull \hbox (5.98357pt too wide) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 network.This is Semantic-aware sub-network.This is Semantic-
- []
-
-
-Underfull \hbox (badness 2547) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 aware sub-network.This is Semantic-aware sub-network.
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Overfull \hbox (5.98357pt too wide) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 network.This is Semantic-aware sub-network.This is Semantic-
- []
-
-
-Underfull \hbox (badness 2547) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 aware sub-network.This is Semantic-aware sub-network.
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Overfull \hbox (5.98357pt too wide) in paragraph at lines 78--86
-\OT1/ptm/m/n/10 network.This is Semantic-aware sub-network.This is Semantic-
- []
-
-[2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-3-eps-converte
-d-to.pdf>]
-Underfull \hbox (badness 2205) in paragraph at lines 87--91
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Overfull \hbox (8.88356pt too wide) in paragraph at lines 87--91
-\OT1/ptm/m/n/10 network. This is Semantic-aware sub-network.This is Semantic-
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 87--91
-\OT1/ptm/m/n/10 sub-network.This is Semantic-aware sub-network.This is
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 94--101
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 94--101
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 94--101
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 94--101
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Overfull \hbox (9.26427pt too wide) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 sub-network.This is Texture-aware sub-network.This is Texture-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 102--111
-\OT1/ptm/m/n/10 is Texture-aware sub-network.This is Texture-aware sub-
+Underfull \hbox (badness 1990) in paragraph at lines 94--97
+\OT1/ptm/m/n/10 seg-men-ta-tion com-mu-ni-ty, in-clud-ing in-ter-sec-tion over 
+u-
  []
 
 Package epstopdf Info: Source file: <pic3.eps>
-(epstopdf)                    date: 2019-07-31 17:30:56
-(epstopdf)                    size: 1314937 bytes
+(epstopdf)                    date: 2019-08-18 10:55:13
+(epstopdf)                    size: 5067535 bytes
 (epstopdf)             Output file: <pic3-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-31 17:31:21
-(epstopdf)                    size: 312771 bytes
+(epstopdf)                    date: 2019-08-18 10:55:34
+(epstopdf)                    size: 1168834 bytes
 (epstopdf)             Command: <epstopdf --outfile=pic3-eps-converted-to.pdf p
 ic3.eps>
-(epstopdf)             \includegraphics on input line 129.
+(epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
-<pic3-eps-converted-to.pdf, id=275, 1037.8775pt x 671.50874pt>
+<pic3-eps-converted-to.pdf, id=275, 807.015pt x 525.965pt>
 File: pic3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic3-eps-converted-to.pdf>
-Package pdftex.def Info: pic3-eps-converted-to.pdf used on input line 129.
-(pdftex.def)             Requested size: 481.13454pt x 311.29543pt.
+Package pdftex.def Info: pic3-eps-converted-to.pdf used on input line 101.
+(pdftex.def)             Requested size: 481.13454pt x 313.57503pt.
  [3]
-Underfull \hbox (badness 3919) in paragraph at lines 143--150
+Underfull \hbox (badness 3919) in paragraph at lines 111--116
 \OT1/ptm/m/n/10 state-of-the-art meth-od-s.Comparison with state-of-the-art
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 143--150
-\OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 143--150
-\OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 143--150
+Underfull \hbox (badness 1038) in paragraph at lines 111--116
 \OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
  []
 
@@ -417,24 +296,26 @@ Underfull \hbox (badness 2035) in paragraph at lines 36--39
 
 Missing character: There is no ¨ in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
-) [5] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
+) [5] [6
+
+] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2245 strings out of 495354
- 30175 string characters out of 3183467
- 93391 words of memory out of 3000000
- 5378 multiletter control sequences out of 15000+200000
+ 2247 strings out of 495354
+ 30223 string characters out of 3183467
+ 93405 words of memory out of 3000000
+ 5380 multiletter control sequences out of 15000+200000
  20508 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,11n,23p,2280b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{
-D:/è½¯ä»¶/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/è½¯ä»¶/CTEX/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/
-times/utmb8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/è
-½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (5 pages, 3745556 bytes).
+{D:/è
+½¯ä»¶/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/è½¯ä»¶/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/time
+s/utmb8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/è½¯ä»
+¶/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on Template.pdf (6 pages, 4589566 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
+ 308 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

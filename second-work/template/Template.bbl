@@ -149,4 +149,9 @@ L.~C. Chen, Y.~Yang, J.~Wang, W.~Xu, and A.~L. Yuille,
 \newblock ``Attention to scale: Scale-aware semantic image segmentation,''
 \newblock in {\em CVPR}, 2016, pp. 3640--3649.
 
+\bibitem{dong2016accelerating}
+C.~Dong, C.~C. Loy, and X.~Tang,
+\newblock ``Accelerating the super-resolution convolutional neural network,''
+\newblock in {\em ECCV}. Springer, 2016, pp. 391--407.
+
 \end{thebibliography}

@@ -27,7 +27,7 @@
 \maketitle
 
 \begin{abstract}
-Though automatic detection method has been tremendous improved, with the development of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the deep network, a novel {\it Texture-aware Sub-network} is used to cover edge features and small defects as much as possible. Finally, pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small defects detection.
+Though automatic detection method has been tremendous improved, with the development of deep learning. Defect detection in many industrial processes is one of the remaining challenging tasks due to the diversity of products. In this work, we focus on detection tasks in tire industry and develop a {\it Multi-scale Defect Detection Network (MDDN)}, which contains two parallel sub-networks to capture multi-scale defect features. Specifically, high-abstracted semantic features containing defect shapes and locations are mined via a {\it Semantic-aware sub-network}, simplified by an off-the-shelf fully convolutional network. Furthermore, to complement the details filtered by the sub-sampling, a novel {\it Texture-aware Sub-network} is used to cover edge features and small defects as much as possible. Finally, pixel-wised detection results are obtained by fusing features with semantic and texture information. Extensive experiments demonstrate that {\it MDDN} can produce comparable results and achieve significantly performance improvement in small tire defects detection.
 \end{abstract}
 
 \begin{keywords}
@@ -36,7 +36,7 @@ Defect detection, Fully convolutional network, Semantic segmentation, Multi-scal
 
 \section{Introduction}
 \label{sec:intro}
-Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes \cite{kumar2008computer,li2016deformable,ghorai2012automatic}. Especially in tire manufacturing, numerous detection algorithms have been proposed \cite{zhang2013texture,zhang2018tire,xiang2014dictionary} and aroused extensive attention recently. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities \cite{guo2016defect}. Then, the defective product is hierarchical processed according to the location and area of defects. Due to unique properties of the tire image, for instance complexity and low-quality, illustrated in previous study \cite{zhang2013defect,wang2019tire}, most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
+Automatic defect detection, used to improve quality and accelerate production, has become an indispensable part in industrial processes \cite{kumar2008computer,li2016deformable,ghorai2012automatic}. Especially in tire manufacturing, numerous detection algorithms have been proposed \cite{zhang2013texture,zhang2018tire,xiang2014dictionary} and aroused extensive attention recently. In most real-world applications, tire defect detection is first carried out by deriving the defective region from tire X-ray images, which contains various types of defects caused by unclean raw materials and undesired manufacturing facilities \cite{guo2016defect}. Then, defective products are hierarchical processed according to the location and area of defects. Due to unique properties of the tire X-ray image, for instance complexity and low-quality, illustrated in previous study \cite{zhang2013defect,wang2019tire}, most inspection processes are performed by human observers, which increases the risk and reduces the efficiency. Therefore, tire defect detection remains one of the most challenging inspection tasks.
 \begin{figure}[t]
   \centering
   \centerline{\includegraphics[width=0.5\textwidth]{pic1.eps}}
@@ -48,7 +48,7 @@ Automatic defect detection, used to improve quality and accelerate production, h
   \caption{Overall architecture of the proposed MDDN. }
 \end{figure*}
 
-At present, existing computer vision based detection methods are mostly devoted to distinguishing difference between defective regions and background (defective-free regions). A key issue for such methods is feature extraction. Guo {\it et al}. \cite{guo2012tire} proposed a component decomposition based method to detect tire defects, which separated the background from the image by means of two designed filters. Then through an adaptive thresholding processing, defects were derived from the residual image. Besides, Independent component analysis was also used for defect detection tasks \cite{cui2016defect,cui2016novel}. A major disadvantage of these fundamental methods is the limitation of the information contained in low-level clues and domain features. To address the limitation, Zhang {\it et al}. \cite{zhang2013defect,zhang2015automatic} introduced mulit-scale wavelet and curvelet transform, in detection tasks respectively. Furthermore, optimized edge detection and total variation algorithm are used to achieve more accurate results \cite{yan2013detection}. However, the representation capability of fixed kernels is not comprehensive enough. Moreover, transform processes are computationally expensive. Recently, Cui {\it et al}. \cite{cui2018tire} attempted to classify tire defects by means of convolutional neural networks, which has outstanding performance in the recognition and segmentation tasks of natural images. With the excellent feature extraction capability of deep convolutional network (ConvNets), Wang {\it et al}. \cite{wang2019tire} further implemented the detection and segmentation in tire images by a fully convolutional network (FCN) \cite{long2015fully}. However, due to the existence of pooling layers, FCN is not sensitive to small defects and edge details, which is similar to that in dealing with natural image tasks.
+At present, existing computer vision based detection methods are mostly devoted to distinguishing difference between defective regions and background (defective-free regions). A key issue for such methods is feature extraction. Guo {\it et al}. \cite{guo2012tire} proposed a component decomposition based method to detect tire defects, which separated the background from the image by means of two designed filters. Then through an adaptive thresholding processing, defects were derived from the residual image. Besides, Independent component analysis was also used for defect detection tasks \cite{cui2016defect,cui2016novel}. A major disadvantage of these fundamental methods is the limitation of the information contained in low-level clues and domain features. To address the limitation, Zhang {\it et al}. \cite{zhang2013defect,zhang2015automatic} introduced mulit-scale wavelet and curvelet transform in detection tasks respectively. Furthermore, optimized edge detection and total variation algorithm are used to achieve more accurate results \cite{yan2013detection}. However, the representation capability of fixed kernels is not comprehensive enough. Moreover, transform processes are computationally expensive. Recently, Cui {\it et al}. \cite{cui2018tire} attempted to classify tire defects by means of deep convolutional networks (ConvNets), which has outstanding performance in the recognition and segmentation tasks of natural images. With the excellent feature extraction capability of the ConvNet, Wang {\it et al}. \cite{wang2019tire} further implemented the detection and segmentation in tire images by a fully convolutional network (FCN) \cite{long2015fully}. However, due to the existence of pooling layers, FCN is not sensitive to small defects and edge details, which is similar to that in dealing with natural image segmentation tasks.
 
 
 
@@ -65,63 +65,37 @@ To detect small tire defects, image patches \cite{bai2018sod,chen2016attention} 
 \section{Multi-scale Defect Detection Network}
 \label{sec:format}
 
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
-This is the proposed method.This is the proposed method.This is the proposed method.This is the proposed method.
+Our deep network aims to improve the accuracy of tire defect detection, especially for edge detail and small defects. To achieve this goal, on the one hand, the proposed MDDN combines deep layer features with low-level clues through two parallel sub-networks. Among them, the semantic-aware network is adopted to mine abstract semantic features including shape and location information, which is simplified by FCN \cite{long2015fully}, a deep network that has outstanding performance in solving the semantic segmentation problems with natural images. Furthermore, in order to supplement the detailed information filtered during the extraction of high-level semantics, a novel texture-aware network is developed to attempt to cover more shallow detail information without increasing computational complexity. On the other hand, owing to the characteristics of the tire images, a variety of data preprocessing methods are used to enhance performance for the two sub-networks. In the following subsections, we describe these networks and strategies in detail.
 
 \subsection{Semantic-aware sub-network}
 \label{Semantic-aware sub-network}
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
+The proposed approach captures the desired high-level semantics of defects using an architectural design similar to the well-known FCN-VGG16 (a FCN with VGG16 as the basic framework), which has been proven to be viable in tire defect detection tasks. At first, a stack of convolution layers and max pooling layers are used repeatedly to obtain the most representative information in tire images. Each fully connected layer in the VGG16 is then replaced by a special convolutional layer to retain sufficient spatial information. Finally, prediction results with the same size as input images are derived by up-sampling these spatial feature maps. We simplify an off-the-shelf FCN-VGG16 into a binary-classification and pixel-wise detection model. Moreover, we normalize the parameters of convolutional layers, such as both padding and stride are set to 1 and the convolution kernel size is set to 3 $\times$ 3, and remove the crop layers to reduce noise and increase the detection efficiency.
 
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
-This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.This is Semantic-aware sub-network.
+Although the learned filter in VGG network are excellent generic visual descriptors, it is originally trained for the purpose of object classification tasks. The existence of the five max pooling layers allows it to filter out the essential details while having the capability to mine global semantic information. Therefore, the FCN is not sensitive to the edge details detection, especially for small-sized defects.
 
 \subsection{Texture-aware sub-network}
 \label{Texture-aware sub-network}
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
+As mentioned above, to complement the details filtered by pooling layers, a novel texture-aware network, in parallel with the semantic-aware network, is developed to obtain detailed clues in shallow layers. The texture-aware network employs 4 convolutional layers inspired by FSRCNN\cite{dong2016accelerating}, a network that is expert in handling precise visual tasks such as super-resolution. The first layer of convolution uses a 5 $\times$ 5 convolution kernel to extract the features of the input image. These features are directly used by later layers to increase computational complexity. Although these feature maps carrying a large amount of valuable information can be directly mapped by later networks, this leads to an increase in computational complexity.
 
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
-This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.This is Texture-aware sub-network.
+Although these features contain a wealth of valuable information, direct backward mapping increases the computational complexity. Therefore, the second convolutional layer uses a 1 $\times$ 1 convolution kernel to reduce computational cost and redundancy information, called shrinking. The latter two 3 $\times$ 3 convolutions are adopted to improve representation capability. Without the existence of pooling layers, detailed features can be completely retained. Meanwhile, the down-sampling capability of the shrinking layer in the channel dimension can both reduce redundant information and retain the spatial resolution.
+
+In order to make the texture-aware network robust to scale variations, images are preprocessed through multi-scale blocking and scaling strategies. Generally, in natural image segmentation tasks, the crop operation first obtains proposed regions, and then finely segmentation in these regions[]. In contrast, tire images can be cropped evenly while retaining defect semantic information, due to the similarity of background textures. As shown in Figure 1c, the cropping and scaling essentially change the proportion of defects in training images. In this paper, we crop 2 $\times$ 2 and 4 $\times$ 4 patches without overlap from each image, and consider scales of 0.5 and 1.5.
+
+
+\subsection{Combination and training}
+\label{Combination and training}
+
+Although features extracted by the texture-aware network contain the essential details, the detection results derived from these features usually have a large amount of noise and a high false positive rate without the guidance of global semantics. Therefore, the fusion of semantic-aware networks and texture-aware networks is necessary. Semantic and texture feature maps are combined and fused in the channel dimension via a ** layer and a 1¡Á1 convolution layer.
+
+Since the two sub-networks use different input data and preprocessing methods, we first train the texture-aware network using the block data, and then train the entire network with fixed training texture-aware network parameters. As described in ***, owing to the characteristics of tire image textures, original images can be directly input during the test phase. And the end-to-end test results can be obtained. The experiment proves the effectiveness of this means.
 
 \section{EXPERIMENTS}
 \label{sec:pagestyle}
 \subsection{Implementation details}
 \label{Implementation details}
-{\bf Dataset.} This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.
-This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.
-This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.This is Dataset.\\
-{\bf Parameter Setting.} This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.
-This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.
-This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.This is Parameter Setting.\\
-{\bf Metrics.} This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.
-This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.
-This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metrices.
+{\bf Dataset.} Our experimental dataset consists of 914 tire images including both sidewall and tread images. These images involve various defects such as metal impurities, bubbles, and overlaps. For semantic-aware networks, we consider flipping and mirroring to enhance the data. For texture-aware networks, cropping and scaling are used, as mentioned above.\\
+{\bf Parameter Setting.} Our proposed MDDN was coded with Python 3.5 in the Caffe framework. A GTX-1080 GPU and Intel Xeon-E5 3.40GHz CPU are used for both training and testing. The momentum parameter and weight decay were set to 0.99 and 0.0005 during training, respectively. Moreover, semantic-aware network is implemented on the public FCN code, and the parameters of the texture-aware network are randomly initialized. \\
+{\bf Metrics.} We adopt the widely used metrics in instance segmentation community, including intersection over union(IOU) and pixel accuracy (PA). The former can represent the accuracy of position and area. And the latter indicates the ratio of the correct labeled pixels to the total pixels, which reflects the pixel-level accuracy of the detection results.
 
 
 \begin{figure*}[t]
@@ -132,16 +106,10 @@ This is Metrices.This is Metrices.This is Metrices.This is Metrices.This is Metr
 
 \subsection{Ablation experiment}
 \label{Ablation experiment}
-This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.
-This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.
-This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.
-This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.
-This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.This is the ablation experiment.
+In order to evaluate the parameter effectiveness of our proposed MDDN method, we conduct two groups of ablation experiments on the same data set. In one group, features learned by the semantic-aware network and the texture-aware network are used alone to detect defects. As the results shown in the figure **. The semantic-aware network can roughly detect the location and shape of the defect. The texture-aware network has a high false positive rate due to the large amount of noise in the extracted features. In another group, for the same network trained with block images, we use the block images and the original images for testing. The experimental results verify that tire blocks still has relatively complete semantic information.
 
 \subsection{Comparison with state-of-the-art methods}
 \label{state-of-the-art methods}
-Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.
-Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.
 Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.
 Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.
 Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.Comparison with state-of-the-art methods.
