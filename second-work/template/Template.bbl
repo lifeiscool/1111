@@ -107,11 +107,6 @@ N.~Dalal and B.~Triggs,
 \newblock ``Histograms of oriented gradients for human detection,''
 \newblock in {\em CVPR}, 2005.
 
-\bibitem{he2016deep}
-K.~He, X.~Zhang, S.~Ren, and J.~Sun,
-\newblock ``Deep residual learning for image recognition,''
-\newblock in {\em CVPR}, 2016, pp. 770--778.
-
 \bibitem{lin2017feature}
 T.~Y. Lin, P.~Doll¨¢r, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
 \newblock ``Feature pyramid networks for object detection,''
@@ -138,16 +133,17 @@ P.~Zhou, B.~Ni, C.~Geng, J.~Hu, and Y.~Xu,
 \newblock ``Scale-transferrable object detection,''
 \newblock in {\em CVPR}, 2018, pp. 528--537.
 
+\bibitem{boominathan2016crowdnet}
+L.~Boominathan, S.~S. Kruthiventi, and R.~V. Babu,
+\newblock ``Crowdnet: A deep convolutional network for dense crowd counting,''
+\newblock in {\em ACM international conference on Multimedia}. ACM, 2016, pp.
+  640--644.
+
 \bibitem{bai2018sod}
 Y.~Bai, Y.~Zhang, M.~Ding, and B.~Ghanem,
 \newblock ``Sod-mtgan: Small object detection via multi-task generative
   adversarial network,''
 \newblock in {\em ECCV}, 2018, pp. 206--221.
-
-\bibitem{chen2016attention}
-L.~C. Chen, Y.~Yang, J.~Wang, W.~Xu, and A.~L. Yuille,
-\newblock ``Attention to scale: Scale-aware semantic image segmentation,''
-\newblock in {\em CVPR}, 2016, pp. 3640--3649.
 
 \bibitem{dong2016accelerating}
 C.~Dong, C.~C. Loy, and X.~Tang,

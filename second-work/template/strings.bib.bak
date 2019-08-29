@@ -1,11 +1,7 @@
-@Article{Lamp86,
-  author =       "A.B. Smith and C.D. Jones and E.F. Roberts",
-  title =        "Article Title",
-  journal = 	 "Journal",
-  year = 	 "1920",
-  volume = 	 "62",
-  pages = 	 "291-294",
-  month = 	 "January"
+@InProceedings{he2016deep,
+  author = 	 "He, K. and Zhang, X. and Ren, S. and Sun, J.",
+  title =        "Deep residual learning for image recognition",
+  booktitle =        "CVPR",
+  year = 	 "2016",
+  pages = 	 "770-778"
 }
-
-

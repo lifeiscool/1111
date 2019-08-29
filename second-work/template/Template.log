@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  19 AUG 2019 16:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  29 AUG 2019 21:14
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -206,11 +206,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 33.
 Package epstopdf Info: Source file: <pic1.eps>
-(epstopdf)                    date: 2019-07-31 11:36:20
-(epstopdf)                    size: 16165905 bytes
+(epstopdf)                    date: 2019-08-29 20:46:08
+(epstopdf)                    size: 16289054 bytes
 (epstopdf)             Output file: <pic1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-31 11:36:51
-(epstopdf)                    size: 1068398 bytes
+(epstopdf)                    date: 2019-08-29 20:46:54
+(epstopdf)                    size: 1068376 bytes
 (epstopdf)             Command: <epstopdf --outfile=pic1-eps-converted-to.pdf p
 ic1.eps>
 (epstopdf)             \includegraphics on input line 42.
@@ -221,23 +221,23 @@ File: pic1-eps-converted-to.pdf Graphic file (type pdf)
 <use pic1-eps-converted-to.pdf>
 Package pdftex.def Info: pic1-eps-converted-to.pdf used on input line 42.
 (pdftex.def)             Requested size: 253.22952pt x 181.79825pt.
-Package epstopdf Info: Source file: <pic2-3.eps>
-(epstopdf)                    date: 2019-08-06 15:04:24
-(epstopdf)                    size: 39021024 bytes
-(epstopdf)             Output file: <pic2-3-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-08-06 15:07:24
-(epstopdf)                    size: 2287799 bytes
-(epstopdf)             Command: <epstopdf --outfile=pic2-3-eps-converted-to.pdf
- pic2-3.eps>
+Package epstopdf Info: Source file: <pic2-4.eps>
+(epstopdf)                    date: 2019-08-29 16:38:05
+(epstopdf)                    size: 3466280 bytes
+(epstopdf)             Output file: <pic2-4-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-08-29 16:38:23
+(epstopdf)                    size: 188188 bytes
+(epstopdf)             Command: <epstopdf --outfile=pic2-4-eps-converted-to.pdf
+ pic2-4.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic2-3-eps-converted-to.pdf, id=2, 7002.16pt x 2300.595pt>
-File: pic2-3-eps-converted-to.pdf Graphic file (type pdf)
+<pic2-4-eps-converted-to.pdf, id=2, 1468.48625pt x 503.8825pt>
+File: pic2-4-eps-converted-to.pdf Graphic file (type pdf)
 
-<use pic2-3-eps-converted-to.pdf>
-Package pdftex.def Info: pic2-3-eps-converted-to.pdf used on input line 47.
-(pdftex.def)             Requested size: 435.55508pt x 143.08475pt.
+<use pic2-4-eps-converted-to.pdf>
+Package pdftex.def Info: pic2-4-eps-converted-to.pdf used on input line 47.
+(pdftex.def)             Requested size: 481.13454pt x 165.09pt.
 
 Underfull \hbox (badness 1163) in paragraph at lines 51--52
 \OT1/ptm/m/n/10 meth-od-s are most-ly de-vot-ed to dis-tin-guish-ing d-if-fer-e
@@ -249,19 +249,8 @@ nce
 
 
  <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic1-eps-converted-to
-.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-3-eps-convert
-ed-to.pdf>]
-Missing character: There is no ¡ in font ptmr7t!
-Missing character: There is no Á in font ptmr7t!
-
-Underfull \hbox (badness 1990) in paragraph at lines 94--97
-\OT1/ptm/m/n/10 seg-men-ta-tion com-mu-ni-ty, in-clud-ing in-ter-sec-tion over 
-u-
- []
-
+.pdf>] [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-4-eps-c
+onverted-to.pdf>]
 Package epstopdf Info: Source file: <pic3.eps>
 (epstopdf)                    date: 2019-08-18 10:55:13
 (epstopdf)                    size: 5067535 bytes
@@ -270,21 +259,35 @@ Package epstopdf Info: Source file: <pic3.eps>
 (epstopdf)                    size: 1168834 bytes
 (epstopdf)             Command: <epstopdf --outfile=pic3-eps-converted-to.pdf p
 ic3.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
-<pic3-eps-converted-to.pdf, id=275, 807.015pt x 525.965pt>
+ <pic3-eps-converted-to.pdf, id=212, 807.015pt x 525.965pt>
 File: pic3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic3-eps-converted-to.pdf>
-Package pdftex.def Info: pic3-eps-converted-to.pdf used on input line 101.
+Package pdftex.def Info: pic3-eps-converted-to.pdf used on input line 98.
 (pdftex.def)             Requested size: 481.13454pt x 313.57503pt.
+
+Overfull \hbox (0.89407pt too wide) in paragraph at lines 104--105
+\OT1/ptm/m/n/10 In or-der to e-val-u-ate the pa-ram-e-ter ef-fec-tive-ness of o
+ur MDDN,
+ []
+
+
+Underfull \vbox (badness 1910) has occurred while \output is active []
+
  [3]
-Underfull \hbox (badness 3919) in paragraph at lines 111--116
+Underfull \hbox (badness 3919) in paragraph at lines 108--113
 \OT1/ptm/m/n/10 state-of-the-art meth-od-s.Comparison with state-of-the-art
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 111--116
+Underfull \hbox (badness 1038) in paragraph at lines 108--113
+\OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 108--113
 \OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
  []
 
@@ -296,26 +299,24 @@ Underfull \hbox (badness 2035) in paragraph at lines 36--39
 
 Missing character: There is no ¨ in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
-) [5] [6
-
-] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
+) [5] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2247 strings out of 495354
- 30223 string characters out of 3183467
- 93405 words of memory out of 3000000
- 5380 multiletter control sequences out of 15000+200000
+ 2246 strings out of 495354
+ 30217 string characters out of 3183467
+ 93401 words of memory out of 3000000
+ 5379 multiletter control sequences out of 15000+200000
  20508 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,11n,23p,2280b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/è
-½¯ä»¶/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/è½¯ä»¶/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/time
-s/utmb8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/è½¯ä»
-¶/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (6 pages, 4589566 bytes).
+ 42i,11n,23p,2097b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{
+D:/è½¯ä»¶/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/è½¯ä»¶/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/
+times/utmb8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/è
+½¯ä»¶/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/è½¯ä»¶/CTEX/MiKTeX/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on Template.pdf (5 pages, 2488305 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
+ 242 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
