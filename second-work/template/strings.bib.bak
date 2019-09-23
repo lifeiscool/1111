@@ -1,7 +1,0 @@
-@InProceedings{he2016deep,
-  author = 	 "He, K. and Zhang, X. and Ren, S. and Sun, J.",
-  title =        "Deep residual learning for image recognition",
-  booktitle =        "CVPR",
-  year = 	 "2016",
-  pages = 	 "770-778"
-}

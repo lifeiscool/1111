@@ -18,16 +18,6 @@
   pages = "1256-1264",
   publisher = "IEEE"
 }
-@article{ghorai2012automatic,
-  author = "Ghorai, S. and Mukherjee, A. and Gangadaran, M. and Dutta, P. K.",
-  title = "Automatic defect detection on hot-rolled flat steel products",
-  journal = "IEEE Trans. on Instrumentation and Measurement",
-  year = "2012",
-  volume = "62",
-  number = "3",
-  pages = "612-621",
-  publisher = "IEEE"
-}
 @article{zhang2013texture,
   author = "Zhang, C. and Li, X. and Guo, Q. and Yu, X. and Zhang, C.",
   title = "Texture-invariant detection method for tire crack",
@@ -48,10 +38,9 @@
   publisher = "Atlantis Press"
 }
 @InProceedings{xiang2014dictionary,
-  author = 	 "Jones, C.D. and Smith, A.B. and Roberts, E.F.",
+  author = 	 "Xiang, Y. and Zhang, C. and Guo, Q.",
   title =        "A dictionary-based method for tire defect detection",
   booktitle =        "ICIA",
-  organization = "IEEE",
   year = 	 "2014",
   pages = 	 "519-523"
 }
@@ -61,6 +50,7 @@
   journal = "Journal of Sensors",
   year = "2016",
   volume = "2016",
+  pages = 	 "868-880"
   publisher = "Hindawi"
 }
 @article{wang2019tire,
@@ -69,11 +59,11 @@
   journal = "IEEE Access",
   year = "2019",
   volume = "7",
-  pages = "43502--43510",
+  pages = "43502-43510",
   publisher = "IEEE"
 }
 @article{guo2012tire,
-  author = "Guo, Q. and Wei, Z. W.",
+  author = "Guo, Q. and Wei, Z.",
   title = "Tire defect detection using image component decomposition",
   journal = "Research Journal of Applied Sciences, Engineering and Technology",
   year = "2012",
@@ -84,14 +74,14 @@
 }
 @InProceedings{cui2016defect,
   author = 	 "Cui, X. and Liu, Y. and Wang, C.",
-  title =        "Defect automatic detection for tire X-ray images using inverse transformation of principal component residual",
-  booktitle =        "AIPR",
+  title = "Defect automatic detection for tire X-ray images using inverse transformation of principal component residual",
+  booktitle = "AIPR",
   organization = "IEEE",
-  year = 	 "2016",
-  pages = 	 "1-8"
+  year =  "2016",
+  pages =  "1-8"
 }
 @article{cui2016novel,
-  author = "Cui, X. H. and Liu, Y. and Wang, C. X. and Li, H.",
+  author = "Cui, X. and Liu, Y. and Wang, C. and Li, H.",
   title = "A Novel Method for Feature Extraction and Automatic Recognition of Tire Defects Using Independent Component Analysis",
   journal = "DEStech Transactions on Materials Science and Engineering",
   year = "2016",
@@ -129,7 +119,7 @@
 @article{cui2018tire,
   author = "Cui, X. and Liu, Y. and Zhang, Y. and Wang, C.",
   title = "Tire defects classification with multi-contrast convolutional neural networks",
-  journal = "International Journal of Pattern Recognition and Artificial Intelligence",
+  journal = "IJPRAI",
   year = "2018",
   volume = "32",
   number = "04",
@@ -144,7 +134,7 @@
   pages = 	 "3431-3440"
 }
 @article{lowe2004distinctive,
-  author = "Lowe, D. G.",
+  author = "Lowe, D.",
   title = "Distinctive image features from scale-invariant keypoints",
   journal = "IJCV",
   year = "2004",
@@ -152,26 +142,20 @@
   pages = "91-110",
   publisher = "Springer"
 }
-@InProceedings{dalal2005histograms,
-  author = "Dalal, N. and Triggs, B.",
-  title = "Histograms of oriented gradients for human detection",
-  booktitle = "CVPR",
-  year = "2005",
-}
+
 @InProceedings{lin2017feature,
-  author = 	 "Lin, T. Y. and Doll¨¢r, P. and Girshick, R. and He, K. and Hariharan, B. and Belongie, S.",
+  author = 	 "Lin, T. and Doll¨¢r, P. and Girshick, R. and He, K. and Hariharan, B. and Belongie, S.",
   title =        "Feature pyramid networks for object detection",
   booktitle =        "CVPR",
-  year = 	 "2017",
-  pages = 	 "2117-2125"
+  pages = 	 "2117-2125",
+  year = 	 "2017"
 }
 @InProceedings{liu2016ssd,
-  author = 	 "Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and Reed, S. and Fu, C. Y. and Berg, A. C.",
+  author = 	 "Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and Reed, S. and Fu, C. and Berg, A.",
   title =        "Ssd: Single shot multibox detector",
   booktitle =        "ECCV",
-  year = 	 "2016",
   pages = 	 "21-37",
-  organization="Springer"
+  year = 	 "2016"
 }
 @InProceedings{newell2016stacked,
   author = "Newell, A. and Yang, K. and Deng, J.",
@@ -179,15 +163,13 @@
   booktitle = "ECCV",
   year = "2016",
   pages = "483-499",
-  organization="Springer"
 }
 @InProceedings{ghiasi2016laplacian,
-  author = "Ghiasi, G. and Fowlkes, C. C.",
+  author = "Ghiasi, G. and Fowlkes, C.",
   title = "Laplacian pyramid reconstruction and refinement for semantic segmentation",
   booktitle = "ECCV",
   year = "2016",
   pages = "519-534",
-  organization="Springer"
 }
 @InProceedings{zhou2018scale,
   author = "Zhou, P. and Ni, B. and Geng, C. and Hu, J. and Xu, Y.",
@@ -204,19 +186,30 @@
   year = "2018"
 }
 @InProceedings{boominathan2016crowdnet,
-  author = "Boominathan, L. and Kruthiventi, S. S. and Babu, R. V.",
+  author = "Boominathan, L. and Kruthiventi, S. and Babu, R.",
   title = "Crowdnet: A deep convolutional network for dense crowd counting",
   booktitle = "ACM international conference on Multimedia",
   pages = "640-644",
   year = "2016",
-  organization = "ACM"
 }
 @InProceedings{dong2016accelerating,
-  author = "Dong, C. and Loy, C. C. and Tang, X.",
+  author = "Dong, C. and Loy, C. and Tang, X.",
   title = "Accelerating the super-resolution convolutional neural network",
   booktitle = "ECCV",
   pages = "391-407",
   year = "2016",
-  organization = "Springer"
 }
-
+@InProceedings{girshick2014rich,
+  author = "Girshick, R. and Donahue, J. and Darrell, T. and Malik, J.",
+  title = "Rich feature hierarchies for accurate object detection and semantic segmentation",
+  booktitle = "CVPR",
+  pages = "580-587",
+  year = "2014",
+}
+@InProceedings{ren2015faster,
+  author = "Ren, S. and He, K. and Girshick, R. and Sun, J.",
+  title = "Faster r-cnn: Towards real-time object detection with region proposal networks",
+  booktitle = "NIPS",
+  pages = "91-99",
+  year = "2015",
+}

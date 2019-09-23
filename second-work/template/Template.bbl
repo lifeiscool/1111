@@ -13,12 +13,6 @@ Y.~Li, W.~Zhao, and J.~Pan,
 \newblock {\em IEEE Trans. on Automation Science and Engineering}, vol. 14, no.
   2, pp. 1256--1264, 2016.
 
-\bibitem{ghorai2012automatic}
-S.~Ghorai, A.~Mukherjee, M.~Gangadaran, and P.~K. Dutta,
-\newblock ``Automatic defect detection on hot-rolled flat steel products,''
-\newblock {\em IEEE Trans. on Instrumentation and Measurement}, vol. 62, no. 3,
-  pp. 612--621, 2012.
-
 \bibitem{zhang2013texture}
 C.~Zhang, X.~Li, Q.~Guo, X.~Yu, and C.~Zhang,
 \newblock ``Texture-invariant detection method for tire crack,''
@@ -33,15 +27,15 @@ Y.~Zhang, X.~Cui, Y.~Liu, and B.~Yu,
   vol. 11, no. 1, pp. 1056--1066, 2018.
 
 \bibitem{xiang2014dictionary}
-C.D. Jones, A.B. Smith, and E.F. Roberts,
+Y.~Xiang, C.~Zhang, and Q.~Guo,
 \newblock ``A dictionary-based method for tire defect detection,''
-\newblock in {\em ICIA}. IEEE, 2014, pp. 519--523.
+\newblock in {\em ICIA}, 2014, pp. 519--523.
 
 \bibitem{guo2016defect}
 Q.~Guo, C.~Zhang, H.~Liu, and X.~Zhang,
 \newblock ``Defect detection in tire x-ray images using weighted texture
   dissimilarity,''
-\newblock {\em Journal of Sensors}, vol. 2016, 2016.
+\newblock {\em Journal of Sensors}, vol. 2016, pp. 868--880, 2016.
 
 \bibitem{zhang2013defect}
 Y.~Zhang, T.~Li, and Q.~Li,
@@ -55,7 +49,7 @@ R.~Wang, Q.~Guo, S.~Lu, and C.~Zhang,
 \newblock {\em IEEE Access}, vol. 7, pp. 43502--43510, 2019.
 
 \bibitem{guo2012tire}
-Q.~Guo and Z.~W. Wei,
+Q.~Guo and Z.~Wei,
 \newblock ``Tire defect detection using image component decomposition,''
 \newblock {\em Research Journal of Applied Sciences, Engineering and
   Technology}, vol. 4, no. 1, pp. 41--44, 2012.
@@ -64,10 +58,10 @@ Q.~Guo and Z.~W. Wei,
 X.~Cui, Y.~Liu, and C.~Wang,
 \newblock ``Defect automatic detection for tire x-ray images using inverse
   transformation of principal component residual,''
-\newblock in {\em AIPR}. IEEE, 2016, pp. 1--8.
+\newblock in {\em AIPR}, 2016, pp. 1--8.
 
 \bibitem{cui2016novel}
-X.~H. Cui, Y.~Liu, C.~X. Wang, and H.~Li,
+X.~Cui, Y.~Liu, C.~Wang, and H.~Li,
 \newblock ``A novel method for feature extraction and automatic recognition of
   tire defects using independent component analysis,''
 \newblock {\em DEStech Transactions on Materials Science and Engineering}, ,
@@ -89,8 +83,7 @@ Z.~Yan, L.~Tao, and L.~Qing-Ling,
 X.~Cui, Y.~Liu, Y.~Zhang, and C.~Wang,
 \newblock ``Tire defects classification with multi-contrast convolutional
   neural networks,''
-\newblock {\em International Journal of Pattern Recognition and Artificial
-  Intelligence}, vol. 32, no. 04, pp. 1850011, 2018.
+\newblock {\em IJPRAI}, vol. 32, no. 04, pp. 1850011, 2018.
 
 \bibitem{long2015fully}
 J.~Long, E.~Shelhamer, and T.~Darrell,
@@ -98,35 +91,30 @@ J.~Long, E.~Shelhamer, and T.~Darrell,
 \newblock in {\em CVPR}, 2015, pp. 3431--3440.
 
 \bibitem{lowe2004distinctive}
-D.~G. Lowe,
+D.~Lowe,
 \newblock ``Distinctive image features from scale-invariant keypoints,''
 \newblock {\em IJCV}, vol. 60, pp. 91--110, 2004.
 
-\bibitem{dalal2005histograms}
-N.~Dalal and B.~Triggs,
-\newblock ``Histograms of oriented gradients for human detection,''
-\newblock in {\em CVPR}, 2005.
-
 \bibitem{lin2017feature}
-T.~Y. Lin, P.~Doll¨¢r, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
+T.~Lin, P.~Doll¨¢r, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
 \newblock ``Feature pyramid networks for object detection,''
 \newblock in {\em CVPR}, 2017, pp. 2117--2125.
 
 \bibitem{liu2016ssd}
-W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.~Y. Fu, and A.~C. Berg,
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.~Fu, and A.~Berg,
 \newblock ``Ssd: Single shot multibox detector,''
-\newblock in {\em ECCV}. Springer, 2016, pp. 21--37.
+\newblock in {\em ECCV}, 2016, pp. 21--37.
 
 \bibitem{newell2016stacked}
 A.~Newell, K.~Yang, and J.~Deng,
 \newblock ``Stacked hourglass networks for human pose estimation,''
-\newblock in {\em ECCV}. Springer, 2016, pp. 483--499.
+\newblock in {\em ECCV}, 2016, pp. 483--499.
 
 \bibitem{ghiasi2016laplacian}
-G.~Ghiasi and C.~C. Fowlkes,
+G.~Ghiasi and C.~Fowlkes,
 \newblock ``Laplacian pyramid reconstruction and refinement for semantic
   segmentation,''
-\newblock in {\em ECCV}. Springer, 2016, pp. 519--534.
+\newblock in {\em ECCV}, 2016, pp. 519--534.
 
 \bibitem{zhou2018scale}
 P.~Zhou, B.~Ni, C.~Geng, J.~Hu, and Y.~Xu,
@@ -134,9 +122,9 @@ P.~Zhou, B.~Ni, C.~Geng, J.~Hu, and Y.~Xu,
 \newblock in {\em CVPR}, 2018, pp. 528--537.
 
 \bibitem{boominathan2016crowdnet}
-L.~Boominathan, S.~S. Kruthiventi, and R.~V. Babu,
+L.~Boominathan, S.~Kruthiventi, and R.~Babu,
 \newblock ``Crowdnet: A deep convolutional network for dense crowd counting,''
-\newblock in {\em ACM international conference on Multimedia}. ACM, 2016, pp.
+\newblock in {\em ACM international conference on Multimedia}, 2016, pp.
   640--644.
 
 \bibitem{bai2018sod}
@@ -146,8 +134,20 @@ Y.~Bai, Y.~Zhang, M.~Ding, and B.~Ghanem,
 \newblock in {\em ECCV}, 2018, pp. 206--221.
 
 \bibitem{dong2016accelerating}
-C.~Dong, C.~C. Loy, and X.~Tang,
+C.~Dong, C.~Loy, and X.~Tang,
 \newblock ``Accelerating the super-resolution convolutional neural network,''
-\newblock in {\em ECCV}. Springer, 2016, pp. 391--407.
+\newblock in {\em ECCV}, 2016, pp. 391--407.
+
+\bibitem{girshick2014rich}
+R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik,
+\newblock ``Rich feature hierarchies for accurate object detection and semantic
+  segmentation,''
+\newblock in {\em CVPR}, 2014, pp. 580--587.
+
+\bibitem{ren2015faster}
+S.~Ren, K.~He, R.~Girshick, and J.~Sun,
+\newblock ``Faster r-cnn: Towards real-time object detection with region
+  proposal networks,''
+\newblock in {\em NIPS}, 2015, pp. 91--99.
 
 \end{thebibliography}
