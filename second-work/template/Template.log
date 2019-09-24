@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  23 SEP 2019 20:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  24 SEP 2019 20:16
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -285,11 +285,7 @@ Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 ) [6
 
-] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
 Here is how much of TeX's memory you used:
  2249 strings out of 495354
  30226 string characters out of 3183467
@@ -298,11 +294,12 @@ Here is how much of TeX's memory you used:
  20508 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,11n,23p,2254b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/u
-rw/times/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D
-:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fo
-nts/type1/urw/times/utmri8a.pfb>
+{D:/�
+��件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/time
+s/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软�
+�/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/typ
+e1/urw/times/utmri8a.pfb>
 Output written on Template.pdf (6 pages, 2488837 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
