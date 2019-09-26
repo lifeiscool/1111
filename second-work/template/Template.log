@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  24 SEP 2019 20:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.20)  25 SEP 2019 21:28
 entering extended mode
 **Template.tex
 (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.tex
@@ -167,7 +167,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
+(E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux
+
+LaTeX Warning: Label `Combination' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -181,8 +185,7 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
-
-(D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+ (D:\软件\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (D:\软件\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
@@ -262,20 +265,23 @@ File: pic3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: pic3-eps-converted-to.pdf used on input line 63.
 (pdftex.def)             Requested size: 481.13454pt x 313.57503pt.
  [2 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic2-4-eps-convert
-ed-to.pdf>] [3 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic3-ep
-s-converted-to.pdf>]
-Overfull \hbox (0.89407pt too wide) in paragraph at lines 107--108
+ed-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <E:/WorkSpace/GitHub_WorkSpace/1111/second-work/template/pic3-eps-converted
+-to.pdf>]
+Overfull \hbox (0.89407pt too wide) in paragraph at lines 114--115
 \OT1/ptm/m/n/10 In or-der to e-val-u-ate the pa-ram-e-ter ef-fec-tive-ness of o
 ur MDDN,
  []
 
 
-Underfull \hbox (badness 3919) in paragraph at lines 111--116
+Underfull \hbox (badness 3919) in paragraph at lines 118--123
 \OT1/ptm/m/n/10 state-of-the-art meth-od-s.Comparison with state-of-the-art
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 111--116
+Underfull \hbox (badness 1038) in paragraph at lines 118--123
 \OT1/ptm/m/n/10 son with state-of-the-art meth-od-s.Comparison with state-
  []
 
@@ -285,22 +291,25 @@ Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 ) [6
 
-] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux) ) 
+] (E:\WorkSpace\GitHub_WorkSpace\1111\second-work\template\Template.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
  2249 strings out of 495354
- 30226 string characters out of 3183467
- 91425 words of memory out of 3000000
+ 30213 string characters out of 3183467
+ 92464 words of memory out of 3000000
  5382 multiletter control sequences out of 15000+200000
  20508 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,11n,23p,2254b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/�
-��件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/time
-s/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D:/软�
-�/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (6 pages, 2488837 bytes).
+{D:/软件/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/软件/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/u
+rw/times/utmb8a.pfb><D:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><D
+:/软件/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/软件/CTEX/MiKTeX/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on Template.pdf (6 pages, 2489678 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
